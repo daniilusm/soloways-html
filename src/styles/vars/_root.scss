@@ -35,12 +35,8 @@
             --gap-#{$gap}: #{vw($gap)};
         }
 
-        --font-primary: $primary;
-        --font-secondary: $secondary;
-
         @each $name, $color in $colors {
             --c-#{$name}: #{$color};
-            --c-#{$name}-transparent: #{color.change($color, $alpha: 0.65)};
         }
 
         @each $name in $zIndexes {

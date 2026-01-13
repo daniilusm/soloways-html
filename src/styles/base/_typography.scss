@@ -3,3 +3,110 @@
 h1, .h1 {
     font-size: 200px;
 }
+
+.typo{
+
+    //display
+
+    &-d-xl{
+        font-family: var(--font-secondary);
+        font-size: 238px;
+        line-height: auto;
+    }
+
+    &-d-l{
+        font-family: var(--font-primary);
+        font-size: 74px;
+        line-height: 92%;
+        font-weight: 300;
+
+        color: var(--c-heading-text);
+    }
+
+    &-d-m{
+        font-family: var(--font-primary);
+        font-size: 72px;
+        line-height: auto;
+    }
+
+
+    //hat
+
+    &-h1{
+        font-family: var(--font-primary);
+        font-size: 44px;
+        line-height: 91%;
+    }
+
+    &-h2{
+        font-family: var(--font-secondary);
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    //subtitle
+    
+    &-st{
+        font-family: var(--font-secondary);
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    //table
+
+    &-th{
+        font-family: var(--font-secondary);
+        font-size: 11px;
+        line-height: 120%;
+    }
+
+    &-tv{
+        font-family: var(--font-secondary);
+        font-size: 10px;
+        line-height: 120%;
+    }
+
+    &-tl{
+        font-family: var(--font-secondary);
+        font-size: 8px;
+        line-height: 140%;
+    }
+
+    &-td{
+        font-family: var(--font-secondary);
+        font-size: 8px;
+        line-height: 100%;
+    }
+
+    &-tt{
+        font-family: var(--font-secondary);
+        font-size: 10px;
+        line-height: 100%;
+    }
+
+    // additionaly
+
+    &-as{
+        font-family: var(--font-secondary);
+        font-size: 15px;
+        line-height: 100%;
+        font-weight: 500;
+    }
+
+    &-at{
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        line-height: 100%;
+        font-weight: 500;
+    }
+
+    &-asub{}
+
+    &-ahsub{}
+
+    &-aft{
+        font-family: var(--font-secondary);
+        font-size: 29px;
+        line-height: 60%;
+    }
+}
