@@ -1,0 +1,20 @@
+div.container
+      div.nav-page__info
+        img(src="public/assets/images/bg-pattern.webp", alt="bg pattern")
+        h1.typo-afh навигация
+
+      nav.nav-page__list
+        - 
+          const menuItems = [
+            { text: 'Анализ рисков заболеваний', num: '01' },
+            { text: 'План приема добавок', num: '03' },
+            { text: 'Персональная схема нутритивной поддержки', num: '09' },
+            { text: 'Персональный трёхмесячный план образа жизни', num: '13' },
+            { text: 'Приложения', num: '20' },
+            { text: 'Контакты', num: '34' }
+          ]
+        
+        each item in menuItems
+          a.nav-item(href="#")
+            span.nav-text= item.text
+            span.nav-number= item.num

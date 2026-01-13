@@ -1,0 +1,5 @@
+@mixin content() {
+	position: absolute;
+	display: block;
+	content: '';
+}

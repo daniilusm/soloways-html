@@ -1,0 +1,43 @@
+.field {
+	&__label {
+		margin-bottom: var(--spacing-4);
+	}
+
+	&__input {
+		width: 100%;
+		padding: var(--spacing-12) var(--spacing-20);
+		border: 1px solid #eee;
+		border-radius: 0;
+		appearance: none;
+		box-shadow: none;
+		color: #000;
+		text-overflow: ellipsis;
+
+		// color-scheme: dark
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus,
+		&:-webkit-autofill:active {
+			transition: background-color 600000s 0s,
+			color 600000s 0s;
+		}
+
+		&::placeholder {
+			color: #ccc;
+			opacity: 1;
+		}
+	}
+}
+
+.field_error {
+	.field__input {
+		border-color: red;
+	}
+}
+
+.field_success {
+	.field__input {
+		border-color: green;
+	}
+}

@@ -1,0 +1,23 @@
+@use '_mixins';
+
+.tabs {
+	&__title {
+		@include mixins.grid('flex');
+
+		.tabs__item {
+			cursor: pointer;
+		}
+	}
+
+	&__content {
+		.tabs__item {
+			display: none;
+
+			&.tabs__item_active {
+				display: block;
+
+				// animation: fade-in 1s forwards;
+			}
+		}
+	}
+}

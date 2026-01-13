@@ -1,0 +1,58 @@
+@use '_mixins';
+
+.radio,
+.checkbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+
+	input {
+		@include mixins.hidden;
+
+		&:checked + span::after {
+			opacity: 1;
+		}
+	}
+
+	span {
+		position: relative;
+		display: block;
+		padding-left: var(--spacing-32);
+
+		&::before {
+			@include mixins.content;
+
+			top: 0;
+			left: 0;
+			width: 2rem;
+			height: 2rem;
+			background: #ccc;
+			transition-duration: var(--transition-duration);
+			transition-property: color, background-color, opacity, border-color;
+			transition-timing-function: var(--transition-timing-function);
+		}
+
+		&::after {
+			@include mixins.content;
+
+			top: 0.5rem;
+			left: 0.5rem;
+			width: 1rem;
+			height: 1rem;
+			background: #ddd;
+			opacity: 0;
+			transition-duration: var(--transition-duration);
+			transition-property: color, background-color, opacity, border-color;
+			transition-timing-function: var(--transition-timing-function);
+		}
+	}
+}
+
+.radio {
+	span {
+		&::before,
+		&::after {
+			border-radius: 50%;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@use '_mixins';
+
+.field-file {
+	display: block;
+	width: 100%;
+	padding: var(--spacing-16) var(--spacing-20);
+	border: 1px solid transparent;
+	border-radius: 1.4rem;
+	cursor: pointer;
+
+	input {
+		@include mixins.hidden;
+	}
+
+	&__placeholder {
+		display: block;
+		opacity: 0.5;
+	}
+
+	&__value {
+		display: none;
+	}
+
+	&__placeholder,
+	&__value {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+
+.field-file_active {
+	.field-file__placeholder {
+		display: none;
+	}
+
+	.field-file__value {
+		display: block;
+	}
+}

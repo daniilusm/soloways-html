@@ -1,0 +1,6 @@
+@mixin wider() {
+	padding-right: var(--container-gap);
+	padding-left: var(--container-gap);
+	margin-right: calc(var(--container-gap) * -1);
+	margin-left: calc(var(--container-gap) * -1);
+}

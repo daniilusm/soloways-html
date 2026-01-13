@@ -1,0 +1,31 @@
+@use '_mixins';
+
+.breadcrumbs {
+	@include mixins.grid('flex');
+
+	& {
+		margin: 0;
+		list-style: none;
+	}
+
+	&__item {
+		&::after {
+			margin: 0 var(--spacing-8);
+			content: '/';
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__current {
+		color: var(--color-accent);
+	}
+}

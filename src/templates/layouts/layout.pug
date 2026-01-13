@@ -1,0 +1,61 @@
+include ../mixins/mixins
+
+doctype html
+
+html(lang="ru" class="notranslate" translate="no")
+
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(name="format-detection" content="telephone=no")
+
+		title=title
+		meta(name="keywords" content="")
+		meta(name="description" content="")
+
+		meta(property="og:title" content="")
+		meta(property="og:type" content="")
+		meta(property="og:url" content="")
+		meta(property="og:image" content="")
+
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet")
+
+
+		//link(rel="icon" href="favicon.ico" sizes="any")
+		//link(rel="icon" href="icon.svg" type="image/svg+xml")
+		//link(rel="apple-touch-icon" href="icon.png")
+
+		//link(rel="preload" href="fonts/FILE_NAME.woff2" as="font" type="font/woff2" crossorigin)
+
+		link(rel="stylesheet" href="styles/app.scss")
+
+		block css
+
+		script.
+			if (sessionStorage.fontsLoaded) {
+				document.documentElement.classList.add('-fonts-ready')
+			}
+
+	body(data-scroll-lock-fix-shift)
+
+		//div.loader(data-loader): div ⏳Loading...
+
+		div.wrapper
+			include ../widgets/header
+
+			main.main
+				block main
+			// main
+
+			include ../widgets/footer
+		// wrapper
+
+		block bottom
+
+		// JS
+		script(type="module" src="scripts/app.js")
+
+		block js

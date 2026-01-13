@@ -1,0 +1,145 @@
+.modal {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	padding: var(--spacing-20);
+	backface-visibility: hidden;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	outline: none;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: contain;
+	transition: opacity 0.3s ease;
+
+	&__container {
+		position: relative;
+		width: 100%;
+		max-width: 70rem;
+		padding: var(--spacing-40);
+		margin: auto;
+		background: var(--color-white);
+		transform: translateY(-3rem);
+		transition: 0.25s ease;
+	}
+
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 4rem;
+		height: 4rem;
+		padding: 0;
+		border: 0;
+		background: transparent;
+		color: #343434;
+		cursor: pointer;
+		font-size: 2rem;
+		font-weight: bold;
+		line-height: 4rem;
+		text-decoration: none;
+		transition: opacity 0.25s ease;
+
+		svg,
+		use {
+			pointer-events: none;
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__loader {
+		display: block;
+		padding: var(--spacing-12);
+		background: #000;
+	}
+
+	&__iframe {
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 56.25%;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__image {
+		img {
+			display: block;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	&__caption {
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: var(--spacing-20);
+		background: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		font-size: 1.2rem;
+		text-align: center;
+		visibility: hidden;
+	}
+
+	&.modal_opened {
+		display: flex;
+	}
+
+	&.modal_visible {
+		opacity: 1;
+
+		.modal__container {
+			transform: translateY(0);
+		}
+	}
+
+	&.modal_video {
+		.modal__container {
+			max-width: 100rem;
+			padding: 0;
+			background: #000;
+			box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+		}
+
+		.modal__close {
+			top: -4rem;
+			right: -1.5rem;
+		}
+	}
+
+	&.modal_image {
+		.modal__container {
+			position: static;
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			max-height: 100%;
+			padding: 0;
+			margin: 0 auto;
+			background: transparent;
+			box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+			color: #fff;
+		}
+
+		.modal__close {
+			top: 0;
+			right: 0;
+			color: #fff;
+		}
+	}
+}

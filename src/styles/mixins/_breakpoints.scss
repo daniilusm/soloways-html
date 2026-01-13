@@ -1,32 +1,58 @@
-@use 'sass:string';
-@use 'sass:math';
-@use 'sass:map';
+$mobile: 700px; // target 360
+$tablet: 1100px; // target 768
+$laptop: 1600px; // target 1440
+$desktop: 1920px; // target 1920
 
-@use '~styles/vars/breakpoints' as *;
+@mixin bp-mobile-only() {
+	@media (max-width: $mobile) {
+		@content;
+	}
+}
 
-@mixin mq($mq-breakpoint, $direction: max, $mq-breakpoints: $breakpoints) {
-    $mq-media-query: 'screen and';
+@mixin bp-tablet-only() {
+	@media (min-width: $mobile + 0.1px) and (max-width: $tablet) {
+		@content;
+	}
+}
 
-    @if $mq-breakpoint == landscape or $mq-breakpoint == portrait {
-        $mq-media-query: '#{$mq-media-query} (orientation: #{$mq-breakpoint})';
-    } @else if $mq-breakpoint == retina {
-        $mq-media-query: '#{$mq-media-query} #{$min-dpr},' +
-      '#{$mq-media-query} #{$min-res}';
-    } @else {
-        // If $mq-breakpoint is a key that exists in
-        // $mq-breakpoints, get and use the value
-        @if map.has-key($mq-breakpoints, $mq-breakpoint) {
-            $mq-breakpoint: map.get($mq-breakpoints, $mq-breakpoint);
-        }
+@mixin bp-tablet-up() {
+	@media (min-width: $mobile + 0.1px) {
+		@content;
+	}
+}
 
-        @if ($direction == min) {
-            $mq-media-query: "#{$mq-media-query} (#{$direction}-width: #{$mq-breakpoint}px)";
-        } @else {
-            $mq-media-query: "#{$mq-media-query} (#{$direction}-width: #{$mq-breakpoint - 1}px)";
-        }
-    }
+@mixin bp-tablet-down() {
+	@media (max-width: $tablet) {
+		@content;
+	}
+}
 
-    @media #{$mq-media-query} {
-        @content;
-    }
+@mixin bp-laptop-only() {
+	@media (min-width: $tablet + 0.1px) and (max-width: $laptop) {
+		@content;
+	}
+}
+
+@mixin bp-laptop-up() {
+	@media (min-width: $tablet + 0.1px) {
+		@content;
+	}
+}
+
+@mixin bp-laptop-down() {
+	@media (max-width: $laptop) {
+		@content;
+	}
+}
+
+@mixin bp-desktop-only() {
+	@media (min-width: $laptop + 0.1px) and (max-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin bp-desktop-up() {
+	@media (min-width: $laptop + 0.1px) {
+		@content;
+	}
 }

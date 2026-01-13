@@ -1,0 +1,103 @@
+@use 'sass:math';
+
+$tippy-color: #000;
+$tippy-arrow-size: 1.2rem;
+
+[data-tippy] {
+	cursor: help;
+}
+
+.tippy-box[data-animation='fade'][data-state='hidden'] {
+	opacity: 0;
+}
+
+[data-tippy-root] {
+	max-width: calc(100vw - 1rem);
+}
+
+.tippy-box {
+	position: relative;
+	border-radius: 0.4rem;
+	background-color: $tippy-color;
+	color: #fff;
+	font-size: 1.2rem;
+	outline: 0;
+	transition-property: transform, visibility, opacity;
+
+	&[data-placement^='top'] {
+		& > .tippy-arrow {
+			bottom: 0;
+
+			&::before {
+				bottom: math.div(-$tippy-arrow-size, 2);
+				left: 0;
+				border-width: math.div($tippy-arrow-size, 2) math.div($tippy-arrow-size, 2) 0;
+				border-top-color: initial;
+				transform-origin: center top;
+			}
+		}
+	}
+
+	&[data-placement^='bottom'] {
+		& > .tippy-arrow {
+			top: 0;
+
+			&::before {
+				top: math.div(-$tippy-arrow-size, 2);
+				left: 0;
+				border-width: 0 math.div($tippy-arrow-size, 2) math.div($tippy-arrow-size, 2);
+				border-bottom-color: initial;
+				transform-origin: center bottom;
+			}
+		}
+	}
+
+	&[data-placement^='left'] {
+		& > .tippy-arrow {
+			right: 0;
+
+			&::before {
+				right: math.div(-$tippy-arrow-size, 2);
+				border-width: math.div($tippy-arrow-size, 2) 0 math.div($tippy-arrow-size, 2) math.div($tippy-arrow-size, 2);
+				border-left-color: initial;
+				transform-origin: center left;
+			}
+		}
+	}
+
+	&[data-placement^='right'] {
+		& > .tippy-arrow {
+			left: 0;
+
+			&::before {
+				left: math.div(-$tippy-arrow-size, 2);
+				border-width: math.div($tippy-arrow-size, 2) math.div($tippy-arrow-size, 2) math.div($tippy-arrow-size, 2) 0;
+				border-right-color: initial;
+				transform-origin: center right;
+			}
+		}
+	}
+
+	&[data-inertia][data-state='visible'] {
+		transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
+	}
+}
+
+.tippy-arrow {
+	width: $tippy-arrow-size;
+	height: $tippy-arrow-size;
+	color: $tippy-color;
+
+	&::before {
+		position: absolute;
+		border-style: solid;
+		border-color: transparent;
+		content: '';
+	}
+}
+
+.tippy-content {
+	position: relative;
+	z-index: 1;
+	padding: 0.5rem 1rem;
+}

@@ -1,9 +1,0 @@
-<div class="tea-list swiper">
-    <div class="tea-list__wrapper swiper-wrapper">
-        {% for item in listItems %}
-            <a href="{{ item.href }}" class="tea-list__item swiper-slide">
-                {% view "@image" with item.picture|merge({ class: 'tea-list__item-img' }) %}
-            </a>
-        {% endfor %}
-    </div>
-</div>
