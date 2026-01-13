@@ -1,0 +1,9 @@
+@use 'sass:list';
+
+.header {
+    display: block;
+
+    @include mq(md) {
+        display: none;
+    }
+}

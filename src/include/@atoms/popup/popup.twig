@@ -1,0 +1,13 @@
+<div class="popup js-popup {{ class ?: '' }}" data-popup-type={{ type }}>
+    <div class="popup__wrapper js-popup-wrapper">
+        <div class="popup__overlay js-overlay"></div>
+        <div class="popup__content">
+            <button class="popup__close js-close">
+                {% view '@icon-symbol' with {class: 'popup__close-icon popup__close-icon_xs', name: 'close-md'} %}
+                {% view '@icon-symbol' with {class: 'popup__close-icon popup__close-icon_xl', name: 'close-lg'} %}
+            </button>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>

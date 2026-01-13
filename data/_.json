@@ -1,0 +1,88 @@
+{
+    "lang": "ru",
+    "popupWhereBuy": {
+        "type": "where-buy",
+        "title": "Где купить",
+        "markets": [
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/01.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/02.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/03.png",
+                    "src2x": "/tmp/where-buy/03@2x.png"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/04.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/05.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/06.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/07.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/08.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/09.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/10.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/11.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/12.svg"
+                }
+            },
+            {
+                "href": "https://market.ru",
+                "logo": {
+                    "src": "/tmp/where-buy/13.svg"
+                }
+            }
+        ]
+    }
+}

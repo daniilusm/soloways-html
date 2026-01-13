@@ -1,0 +1,24 @@
+{
+    "navTypes": {
+        "caption": "Коллекции",
+        "title": "Выбрать коллекцию",
+        "type": null,
+        "items": [
+            {
+                "name": "Черный чай",
+                "href": "javascript:void(0);",
+                "active": true
+            },
+            {
+                "name": "зеленый чай",
+                "href": "javascript:void(0);",
+                "active": false
+            },
+            {
+                "name": "гербальный чай",
+                "href": "javascript:void(0);",
+                "active": false
+            }
+        ]
+    }
+}

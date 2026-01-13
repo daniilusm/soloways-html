@@ -1,0 +1,15 @@
+@use 'vw' as *;
+@use 'rem' as *;
+
+@mixin h1 {
+    font-family: var(--ff-title);
+    font-weight: 300;
+    font-size: rem(37);
+    line-height: rem(45);
+    letter-spacing: initial;
+    text-transform: uppercase;
+}
+
+%h1 {
+    @include h1;
+}
