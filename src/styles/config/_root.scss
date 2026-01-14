@@ -12,7 +12,7 @@
 	--base-font-size: 10px;
 
 	// grid
-	--container-max-width: 586px;
+	--container-max-width: 595px;
 	--container-gap: 4rem;
 
 	// typography
@@ -118,22 +118,22 @@
 
 	// responsive
 	// target 1920
-	@include mixins.bp-desktop-only {
-		--base-font-size: 0.5208333333vw;
-	}
+	// @include mixins.bp-desktop-only {
+	// 	--base-font-size: 0.5208333333vw;
+	// }
 
-	// target 1440
-	@include mixins.bp-laptop-only {
-		--base-font-size: 0.6944444444vw;
-	}
+	// // target 1440
+	// @include mixins.bp-laptop-only {
+	// 	--base-font-size: 0.6944444444vw;
+	// }
 
-	// target 768
-	@include mixins.bp-tablet-only {
-		--base-font-size: 1.3020833333vw;
-	}
+	// // target 768
+	// @include mixins.bp-tablet-only {
+	// 	--base-font-size: 1.3020833333vw;
+	// }
 
-	// target 360
-	@include mixins.bp-mobile-only {
-		--base-font-size: 2.7777777778vw;
-	}
+	// // target 360
+	// @include mixins.bp-mobile-only {
+	// 	--base-font-size: 2.7777777778vw;
+	// }
 }

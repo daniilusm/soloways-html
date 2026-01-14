@@ -1,7 +1,7 @@
 div.container
       div.nav-page__info
-        img(src="public/assets/images/bg-pattern.webp", alt="bg pattern")
-        h1.typo-afh навигация
+        img(src="../images/bg-pattern.webp", alt="bg pattern")
+        h1.typo-d-l навигация
 
       nav.nav-page__list
         - 
@@ -15,6 +15,6 @@ div.container
           ]
         
         each item in menuItems
-          a.nav-item(href="#")
-            span.nav-text= item.text
-            span.nav-number= item.num
+          a.nav-item(href=`/${item.num}`)
+            span.typo-as= item.text
+            span.typo-at= item.num
