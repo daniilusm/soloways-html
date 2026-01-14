@@ -19,6 +19,12 @@ $fontName: 'LTSuperior';
 
 @include font-face($fontName, 'LTSuperior/LTSuperiorBold', 700);
 
+@include font-face($fontName, 'LTSuperior/LTSuperiorSemibold', 600);
+
+@include font-face($fontName, 'LTSuperior/LTSuperiorMedium', 500);
+
+@include font-face($fontName, 'LTSuperior/LTSuperiorRegular', 400);
+
 .-fonts-ready {
   body {
     font-family: $fontName, var(--font-secondary);
@@ -127,7 +133,8 @@ $fontName: 'LTSuperior';
         font-family: var(--font-secondary);
         font-size: 15px;
         line-height: 100%;
-        font-weight: 500;
+        font-weight: 400;
+        letter-spacing: -0.1px;
     }
 
     &-at{
