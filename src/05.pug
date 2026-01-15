@@ -1,0 +1,12 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/global.scss")
+
+block main
+
+	include templates/pages/05
+
+	- const pageCount = "5"
+	include templates/widgets/footer

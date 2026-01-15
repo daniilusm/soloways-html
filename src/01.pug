@@ -1,3 +1,4 @@
+
 extends templates/layouts/layout
 
 block css
@@ -5,5 +6,17 @@ block css
 
 block main
 	include templates/widgets/hero
+
+	- 
+		const heroData = {
+			title: 'анализ рисков заболеваний',
+			text:'Самый важный раздел отчёта — обязательно прочитайте его внимательно. Здесь мы показываем, какие направления вашего здоровья требуют поддержки прямо сейчас, исходя из вашей генетики, анализов крови и образа жизни. Это поможет вам понять, на что обратить внимание в первую очередь.',
+			imgUrl:"../images/star-01.webp"
+		}
+
+	+hero(heroData)
+
 	include templates/pages/01
+
+	- const pageCount = "1"
 	include templates/widgets/footer

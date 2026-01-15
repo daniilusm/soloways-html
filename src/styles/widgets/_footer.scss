@@ -1,2 +1,36 @@
 .footer {
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 30px * 2);
+    margin: 0 auto;
+
+    transform: translateX(-50%);
+
+    p{
+        z-index: 1;
+        padding: 0 12px;
+        background-color: var(--c-white);
+        color: var(--c-main-text);
+    }
+
+    &::after{
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        height: 1px;
+        width: 100%;
+
+        background-color: var(--c-separator);
+
+        content:'';
+        
+        transform: translateY(-50%);
+    }
 }

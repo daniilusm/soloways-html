@@ -1,6 +1,9 @@
-header.hero-section
-    .hero-content
-      h1 анализ рисков заболеваний
-      p Самый важный раздел отчёта — обязательно прочитайте его внимательно. Здесь мы показываем, какие направления вашего здоровья требуют поддержки прямо сейчас, исходя из вашей генетики, анализов крови и образа жизни. Это поможет вам понять, на что обратить внимание в первую очередь.
-    .hero-image
-      img(src="img/hexagon-bg.png", alt="Декор")
+mixin hero(props)
+  div.hero
+    img.hero__star-img(src= props.imgUrl, alt="bg pattern")
+    div.hero__bg
+      img(src="../images/bg-pattern.webp", alt="bg pattern")
+
+    div.hero__text
+      h1.typo-h1= props.title
+      p.typo-st= props.text

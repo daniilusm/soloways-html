@@ -93,6 +93,7 @@ $fontName: 'LTSuperior';
         font-family: var(--font-secondary);
         font-size: 12px;
         line-height: 120%;
+        letter-spacing: 0.25px;
     }
 
     //table
@@ -101,6 +102,7 @@ $fontName: 'LTSuperior';
         font-family: var(--font-secondary);
         font-size: 11px;
         line-height: 120%;
+        font-weight: 600;
     }
 
     &-tv{
@@ -113,6 +115,7 @@ $fontName: 'LTSuperior';
         font-family: var(--font-secondary);
         font-size: 8px;
         line-height: 140%;
+        font-weight: 400;
     }
 
     &-td{
@@ -134,7 +137,7 @@ $fontName: 'LTSuperior';
         font-size: 15px;
         line-height: 100%;
         font-weight: 400;
-        letter-spacing: -0.1px;
+        letter-spacing: -0.15px;
     }
 
     &-at{

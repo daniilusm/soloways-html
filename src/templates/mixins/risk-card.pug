@@ -1,0 +1,27 @@
+mixin risk-card(data)
+  section.risk-card
+    .risk-header
+      h2= data.title
+    
+    if data.compare
+      .risk-badge
+        span Сравнение с популяцией
+        span.badge-value= data.compare
+    
+    .risk-details
+      if data.blood
+        .detail-col
+          h3 Кровь
+          ul
+            each line in data.blood
+              li= line
+      
+      if data.lifestyle
+        .detail-col
+          h3 Образ жизни
+          p= data.lifestyle
+      
+      if data.genetics
+        .detail-col
+          h3 Генетика
+          p= data.genetics

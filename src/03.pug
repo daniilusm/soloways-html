@@ -1,0 +1,22 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/global.scss")
+
+block main
+	include templates/widgets/hero
+
+	- 
+		const heroData = {
+			title: 'план приема добавок ',
+			text:'Ваше личное расписание на каждый день: какие добавки, в какое время и в какой дозировке принимать. ',
+			imgUrl:"../images/star-03.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/03
+
+	- const pageCount = "3"
+	include templates/widgets/footer

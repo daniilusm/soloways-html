@@ -1,0 +1,37 @@
+section.additional-block
+  div.block-header
+    .title-group
+      h2.typo-h2 Дополнительный блок
+    .filter-tags
+      span.tag.typo-td каждый день
+      span.tag.typo-td месяц 4-6
+
+  p.block-description.typo-tv Это ваш приоритет номер один. Эти добавки помогут закрыть риски для здоровья, которые мы обнаружили в анализе ваших данных. Начните именно с них — и пропейте полный курс 3 месяца. 
+
+  .supplements-table
+    //- Шапка таблицы
+    .table-row.header.typo-th
+      span Период
+      span БАД
+      span Доза
+      span Краткое обоснование
+
+    //- Данные таблицы
+    -
+      const supplements = [
+        { period: 'во время завтрака', name: 'Diosmin + Hesperidin', dose: '1 таблетка (900 мг/100 мг)', desc: 'Уменьшает симптомы варикоза и отёки ног' },
+        { period: 'во время завтрака', name: 'B-complex Extra', dose: '1 капсула', desc: 'Активные витамины группы В поддерживают энергию и метилирование' },
+        { period: 'во время завтрака', name: 'Biotin', dose: '1 капсула (10 мг)', desc: 'Укрепляет волосы и ногти' },
+        { period: 'за 30 мин до ужина', name: 'Extra Berberin', dose: '2 капсулы (1000 мг)', desc: 'Помогает снизить холестерин и сахар крови' },
+        { period: 'во время ужина', name: 'PreBio Complex', dose: '1 капсула', desc: 'Питает полезные бактерии и уменьшает вздутие' },
+        { period: 'за 30 мин до сна', name: 'Synbiotic', dose: '1 капсула (≥10¹⁰ КОЕ)', desc: 'Пополняет микробиоту для лучшего пищеварения' }
+      ]
+
+    each item in supplements
+      .table-row.typo-tv
+        span.period= item.period
+        span.name(href="#")= item.name
+        span.dose= item.dose
+        span.desc= item.desc
+
+img.pattern-img(src="../images/pattern.webp" alt='pattern')
