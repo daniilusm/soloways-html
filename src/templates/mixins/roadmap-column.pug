@@ -1,0 +1,10 @@
+mixin roadmap-column(title, subtitle, items, extraClass)
+  .health-roadmap__column(class=extraClass)
+    .health-roadmap__header
+      h2.health-roadmap__title.typo-d-m= title
+      p.health-roadmap__subtitle.typo-ahsub= subtitle
+    .health-roadmap__line
+    .health-roadmap__content.typo-tl
+      each item in items
+        .health-roadmap__item
+          p.health-roadmap__text= item

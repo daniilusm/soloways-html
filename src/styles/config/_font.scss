@@ -69,7 +69,8 @@ $fontName: 'LTSuperior';
     &-d-m{
         font-family: var(--font-primary);
         font-size: 72px;
-        line-height: auto;
+        line-height: 1;
+        font-weight: 300;
     }
 
 
@@ -79,6 +80,7 @@ $fontName: 'LTSuperior';
         font-family: var(--font-primary);
         font-size: 44px;
         line-height: 91%;
+        font-weight: 300;
     }
 
     &-h2{
@@ -149,7 +151,13 @@ $fontName: 'LTSuperior';
 
     &-asub{}
 
-    &-ahsub{}
+    &-ahsub{
+        font-family: var(--font-primary);
+        font-size: 17px;
+        line-height: 1;
+        letter-spacing: 7px;
+        font-weight: 300;
+    }
 
     &-aft{
         font-family: var(--font-secondary);

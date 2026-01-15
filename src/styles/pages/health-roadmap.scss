@@ -1,0 +1,114 @@
+.health-roadmap {
+
+    color: var(--c-brand);
+    padding: 9px 16px 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__column {
+    // padding: 0 40px;
+    position: relative;
+
+    // Вертикальные разделители между колонками
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: var(--c-cover);
+    }
+  }
+
+  &__content{
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 82px;
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    margin-top: 6px;
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: 16px;
+
+    // Горизонтальные линии внутри колонок
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.5px;
+      background-color: var(--c-brand);
+    }
+  }
+
+  &__text {
+  }
+
+  &__line{
+    position: absolute;
+    top: 31.5%;
+    left: 0;
+    z-index: 2;
+    height: 13px;
+    width: 100%;
+  }
+}
+
+.green_lines{
+    &:first-child{
+        .health-roadmap__line{
+            background-color: var(--c-bright-green);
+            border-radius: 20px 0 0 20px;
+        }
+    }
+
+    &:nth-child(2){
+        .health-roadmap__line{
+            background-color: var(--c-light-green);
+        }}
+
+    &:last-child{
+        .health-roadmap__line{
+            background-color: var(--c-green);
+            border-radius:  0 20px 20px 0;
+        }}
+}
+
+.red_lines{
+    &:first-child{
+        .health-roadmap__line{
+            background-color: var(--c-light-pink);
+            border-radius: 20px 0 0 20px;
+        }
+    }
+
+    &:nth-child(2){
+        .health-roadmap__line{
+            background-color: var(--c-pink);
+        }}
+
+    &:last-child{
+        .health-roadmap__line{
+            background-color: var(--c-red);
+            border-radius:  0 20px 20px 0;
+        }}
+}

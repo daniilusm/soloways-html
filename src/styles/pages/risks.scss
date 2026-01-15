@@ -1,0 +1,43 @@
+
+.risk-cards{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.risk{
+	&__card{
+		display: flex;
+		flex-direction: column;
+    	padding: 0px 16px;
+	}
+
+	&__header{
+		padding: 14px 12px 10px;
+
+		background-color: var(--c-table);
+		border-radius: 6px;
+		margin-bottom: 6px;
+	}
+
+	&__badge{
+		background-color: var(--c-red);
+		color: var(--c-white);
+		padding: 5px 12px 4px;
+		border-radius: 6px;
+		margin-bottom: 25px;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+    	gap: 24px;
+	}
+
+
+	&-details {
+    	display: grid;
+    	grid-template-columns: repeat(3, 1fr);
+    	gap: 24px;
+
+    	padding: 0 12px;
+	}
+}

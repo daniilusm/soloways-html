@@ -1,0 +1,113 @@
+
+
+.additional-block {
+  position: relative;    
+  padding: 0 16px;
+
+  .block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+
+    h2 {
+		display: inline-flex;
+    	align-items: center;
+
+      &::before {
+        content: '';
+		    display: block;
+		    min-width: 10px;
+		    min-height: 10px;
+		    width: 10px;
+		    height: 10px;
+        margin-right: 10px;
+		    border-radius: 50%;
+
+        background-color: var(--c-violet);
+      }
+    }
+
+    .filter-tags {
+      display: flex;
+      gap: 10px;
+
+      .tag {
+        border: 1px solid var(--c-brand);
+        padding: 6px 13px;
+        border-radius: 20px;
+        color: var(--c-brand);
+        background-color: var(--c-table);
+      }
+    }
+  }
+
+  .block-description {
+    color: var(--c-sutitle-text);
+    width: 320px;
+    margin-bottom: 42px;
+  }
+
+  .supplements-table {
+    display: grid;
+    grid-template-columns: 113px 110px 135px 177px;
+    gap: 0;
+
+    .table-row {
+      display: grid;
+      grid-template-columns: subgrid; // Для поддержки во всех браузерах лучше повторить:
+      grid-column: 1 / -1;
+      display: grid;
+    	align-items: center;
+    //   padding: 18px 20px;
+      border-radius: 8px;
+
+      span {
+        padding: 11px 14px;
+
+		&:nth-child(2),&:first-child {
+			white-space: pre;
+		}
+      }
+
+      &:nth-child(even) {
+        background-color: var(--c-table);
+      }
+
+      &.header {
+        margin-bottom: 10px;
+
+		span{
+        	padding: 0 14px;
+		}
+      }
+
+      .name {
+        color: var(--c-brand);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .period, .dose, .desc {
+        color: var(--c-main-text);
+      }
+    }
+  }
+}
+
+
+  .two-col{
+
+	.tag{    
+		white-space: pre;
+	}
+
+	.supplements-table{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+
+      .block-header {
+        margin-bottom: 43px;
+      }
+  }
