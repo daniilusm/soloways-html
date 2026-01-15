@@ -1,0 +1,8 @@
+mixin info-card(title)
+  section.info-card
+    div.info-card__header
+      h4.info-card__title.typo-as= title
+    .info-card__body
+      div.info-card__list
+        if block
+          block

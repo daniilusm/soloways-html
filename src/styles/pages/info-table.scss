@@ -1,0 +1,85 @@
+.cards-wrapper{
+    padding: 0 15px;
+}
+
+.info-card {
+    width: 100%;
+    color: #333;
+
+  p{
+    margin: 0;
+  }
+
+  &__header {
+    background-color: var(--c-table); // Светло-серый фон как на фото
+    padding: 16px 11px 11px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+  }
+
+  &__body {
+    // padding: 0 11px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 2.6fr;
+  }
+
+  &__label {
+    padding: 10px;
+
+  }
+
+  &__content {
+    padding: 7px 11px;
+  }
+}
+
+
+  .block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+
+    h2 {
+		display: inline-flex;
+    	align-items: center;
+
+      &::before {
+        content: '';
+		    display: block;
+		    min-width: 10px;
+		    min-height: 10px;
+		    width: 10px;
+		    height: 10px;
+        margin-right: 10px;
+		    border-radius: 50%;
+
+        background-color: var(--c-violet);
+      }
+    }
+
+    .filter-tags {
+      display: flex;
+      gap: 10px;
+
+      .tag {
+        border: 1px solid var(--c-brand);
+        padding: 6px 13px;
+        border-radius: 20px;
+        color: var(--c-brand);
+        background-color: var(--c-table);
+      }
+    }
+  }
