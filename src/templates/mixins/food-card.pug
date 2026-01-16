@@ -1,0 +1,7 @@
+mixin food-card(image, title, description)
+  article.food-card
+    .food-card__icon-wrapper
+      img.food-card__icon(src=image, alt=title)
+    .food-card__body
+      h3.food-card__title.typo-th= title
+      p.food-card__description.typo-tv= description

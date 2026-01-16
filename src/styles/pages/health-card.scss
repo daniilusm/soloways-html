@@ -1,0 +1,40 @@
+// Переменные
+$color-border: #e0e0e0;
+$color-text-header: #888888; // Серый цвет заголовков из макета
+$color-text-main: #555555;
+$font-main: 'Inter', sans-serif;
+
+.wellness-section {    
+    margin-bottom: 32px;
+}
+
+.health-row {
+  display: flex;
+  gap: 82px; 
+  
+    padding: 3px 14px;
+}
+
+.health-card {
+  flex: 1;
+
+  color: var(--c-sutitle-text);
+
+  &__header {
+    border-bottom: 1px solid var(--c-separator); // Жирная серая линия под заголовком
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__body {
+    padding-right: 10px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

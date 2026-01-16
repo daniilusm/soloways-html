@@ -1,0 +1,8 @@
+mixin health-card(items)
+  .health-row
+    each item in items
+      article.health-card
+        div.health-card__header
+          h3.health-card__title.typo-tt= item.title
+        .health-card__body
+          p.health-card__text.typo-tv!= item.content
