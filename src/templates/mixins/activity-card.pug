@@ -1,0 +1,19 @@
+mixin activity-card(number, title, text)
+  article.activity-card
+    .activity-card__number.typo-h2
+        span= number
+    .activity-card__content
+      h3.activity-card__title.typo-th= title
+      p.activity-card__text.typo-tv= text
+
+//- Миксин для информационных блоков (Анамнез, БАДы)
+mixin info-block(title)
+  section.info-block
+    h2.info-block__main-title= title
+    .info-block__container
+      block
+
+mixin info-row(label, content)
+  .info-row
+    dt.info-row__label= label
+    dd.info-row__content!= content

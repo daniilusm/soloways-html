@@ -1,0 +1,94 @@
+.priority-block {
+    padding: 0 16px;
+
+  &__header {
+    background-color: var(--c-red);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 12px;
+    color: var(--c-white);
+    border-radius: 6px;
+  }
+
+  &__icon {
+    background: #fff;
+    color: var(--c-red);
+    font-size: 13px;
+    font-family: var(--font-secondary);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__content {
+    padding: 14px 0;
+  }
+}
+
+.priority-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.priority-column {
+  &__label {
+    color: #444;
+    margin-bottom: 18px;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__items {
+    width: 70%;
+    p {
+    color: var(--c-main-text);
+    margin-bottom: 18px;
+  }}
+}
+
+// Блок активностей
+.activities-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+
+  &__badge {
+    background-color: var(--c-red);
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-main-text);
+  }
+
+  &__name {
+    margin: 0 0 10px 0;
+    color: var(--c-main-text);
+  }
+
+  &__desc {
+    margin: 0;
+    color: var(--c-main-text);
+  }
+}

@@ -1,0 +1,22 @@
+mixin priority-section(title)
+  section.priority-block
+    div.priority-block__header
+      span.priority-block__icon !
+      h2.priority-block__title.typo-th= title
+    .priority-block__content
+      block
+
+//- Миксин для колонки внутри секции важности
+mixin priority-column(label)
+  .priority-column
+    h3.priority-column__label= label
+    .priority-column__items.typo-tl
+      block
+
+//- Миксин для карточки активности с номером
+mixin activity-item(number, title, description)
+  .activity-item
+    .activity-item__badge= number
+    .activity-item__info
+      h3.activity-item__name= title
+      p.activity-item__desc= description
