@@ -1,0 +1,14 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/info-table.scss")
+
+block main
+	include templates/mixins/info-card
+	include templates/mixins/info-row
+
+	include templates/pages/11
+
+	- const pageCount = "11"
+	include templates/widgets/footer

@@ -1,4 +1,7 @@
-.cards-wrapper{
+.cards-wrapper{    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 0 15px;
 }
 
@@ -8,13 +11,15 @@
 
   p{
     margin: 0;
+    display: flex;
+    align-items: center;
   }
 
   &__header {
     background-color: var(--c-table); // Светло-серый фон как на фото
     padding: 16px 11px 11px;
     border-radius: 6px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 
   &__title {
@@ -27,7 +32,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 6px;
   }
 
   &__row {
@@ -80,6 +85,7 @@
         border-radius: 20px;
         color: var(--c-brand);
         background-color: var(--c-table);
+            white-space: pre;
       }
     }
   }
