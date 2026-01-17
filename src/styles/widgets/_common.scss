@@ -79,3 +79,58 @@ body {
 
     object-fit: contain;
 }
+
+
+
+.section-label{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 12px;
+    color: var(--c-white);
+    border-radius: 6px;
+    width: 531px;
+    margin: 24px auto 0;
+
+    p{
+		display: inline-flex;
+		align-items: center;
+      margin: 0;
+    }
+}
+
+.block-wrapper{
+    width: 531px;
+    margin: 0 auto;
+}
+
+.red-bg{
+	background-color: var(--c-red);
+}
+
+.violet-bg{
+	background-color: var(--c-violet);
+}
+
+.green-bg{
+	background-color: var(--c-green);
+}
+
+.description-tex{
+	margin-top: 20px;
+	white-space: pre-wrap;
+}
+
+.effect-banner{
+
+	&__svg{
+	width: 18px;
+	height: 18px;
+	background-color: var(--c-white);
+	color: var(--c-green);
+	border-radius: 50%;
+	margin-right: 10px;
+	padding: 3px;
+	
+}
+}

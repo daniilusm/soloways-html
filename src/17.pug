@@ -1,0 +1,18 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/info-table.scss")
+	link(rel="stylesheet" href="styles/pages/activity-card.scss")
+	link(rel="stylesheet" href="styles/pages/priority-section.scss")
+	link(rel="stylesheet" href="styles/pages/health-card.scss")
+
+block main
+	include templates/mixins/activity-card
+	include templates/mixins/priority-section
+	include templates/mixins/health-card
+
+	include templates/pages/17
+
+	- const pageCount = "17"
+	include templates/widgets/footer
