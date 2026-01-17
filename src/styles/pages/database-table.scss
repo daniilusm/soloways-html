@@ -1,0 +1,72 @@
+.database-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+
+  margin-bottom: 31px;
+}
+
+.database-card {
+  width: 100%;
+  overflow: hidden;
+
+  &__content {
+    padding: 0 9px;
+  }
+}
+
+.database-list {
+    flex-direction: column;
+    display: flex;
+    gap: 13px;
+
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid var(--c-separator); // Тонкий разделитель между строками
+
+    &:last-child {
+      border-bottom: none; // Убираем линию у последнего элемента
+    }
+  }
+
+  &__description {
+    white-space: pre;
+
+    color: var(--c-main-text);
+    max-width: 70%; // Ограничение ширины для предотвращения наезда на источник
+  }
+
+  &__source {
+    white-space: pre;
+
+    color: var(--c-main-text);
+    text-align: right;
+  }
+}
+
+.tw_bottom{
+    padding: 0 6px;
+
+    &__content{
+        padding: 0 16px;
+        margin-top: 19px;
+        display: flex;
+        gap: 24px;
+        color: var(--c-sutitle-text);
+    }
+
+    &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+        p{
+            margin: 0;
+            width: 321px;
+        }
+}
+}

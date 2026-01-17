@@ -1,0 +1,27 @@
+section.database-container
+  .database-card
+    div.gray-label
+      h2.gray-label__title.typo-as Базы данных
+    
+    .database-card__content.database-list
+      +database-row('888 000 ассоциаций по 7 273 исследованиям (релиз: май 2025)', 'GWAS Catalog')
+      +database-row('220 000 метаболитов, справочные уровни и биохимические пути (KEGG)', 'HMDB v5.0')
+      +database-row('49 000 липидов, классификация и маркёры воспаления', 'LipidMAPS')
+      +database-row('Допустимые верхние уровни (29 нутриентов, версия 2023)', 'EFSA UL')
+      +database-row('Доказательная база RCT и метаанализов', 'PubMed / Cochrane / Epistemonikos')
+
+section.tw_bottom
+  div.gray-label
+    h2.gray-label__title.typo-tv GenAIS использует эти источники для расчёта рисков, подбора дозировок и интерпретации анализов.
+
+  .tw_bottom__content
+    svg(width="9" height="54" viewBox="0 0 9 54" fill="none" xmlns="http://www.w3.org/2000/svg")
+      path(
+        d="M7.89905 46.0651V53.1393H0.379517V46.0651H7.89905ZM7.52795 0.379517V22.2428L7.52698 22.2574L6.11487 40.3834L6.08752 40.733H2.18909L2.1637 40.3815L0.826782 22.2555L0.825806 22.2418V0.379517H7.52795Z" 
+        stroke="#6B6B6B" 
+        stroke-opacity="0.6" 
+        stroke-width="0.759416"
+      )
+    .tw_bottom__texts.typo-tv
+      p= 'Предоставление информации о генотипе, полученной на основе вашего генетического материала, не является медицинской услугой.'
+      p= 'Содержащиеся в аналитике данные о состоянии здоровья не являются диагнозом.'

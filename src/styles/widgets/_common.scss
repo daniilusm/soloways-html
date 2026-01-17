@@ -61,7 +61,7 @@ body {
 		position: relative;
 		z-index: 1;
 
-		width: 470px;
+		width: 450px;
 
 		h1{
 			margin-bottom: 12px;
@@ -133,4 +133,17 @@ body {
 	padding: 3px;
 	
 }
+}
+
+.gray-label{
+    background-color: var(--c-table); // Светло-серый фон заголовка
+    padding: 14px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+  &__title {
+    margin: 0;
+
+    color: var(--c-main-text);
+  }
 }

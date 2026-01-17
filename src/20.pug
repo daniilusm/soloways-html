@@ -1,0 +1,24 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/database-table.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/database-row
+
+	- 
+		const heroData = {
+			title: 'справочный раздел',
+			text:'Здесь лежат все исходные данные: ваша анкета, результаты анализов и генетическая информация. Можете заглянуть сюда, если захотите освежить в памяти, на основе чего мы строили рекомендации.',
+			imgUrl:"../images/star-20.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/20
+
+	- const pageCount = "20"
+	include templates/widgets/footer
