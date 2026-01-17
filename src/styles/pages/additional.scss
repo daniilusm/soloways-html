@@ -85,8 +85,11 @@
 
       .name {
         color: var(--c-brand);
-        text-decoration: underline;
+      }
+
+      .name a {
         text-underline-offset: 3px;
+        text-decoration: underline;
       }
 
       .period, .dose, .desc {
@@ -99,16 +102,20 @@
 
   .two-col{
 
-	.tag{    
-		white-space: pre;
-	}
+	  .tag{    
+	  	white-space: pre;
+	  }
 
-	.supplements-table{
-		grid-template-columns: repeat(2, 1fr);
-	}
+	  .supplements-table{
+	  	grid-template-columns: repeat(2, 1fr);
+	  }
 
 
-      .block-header {
-        margin-bottom: 43px;
-      }
+    .block-header {
+      margin-bottom: 43px;
+    }
+
+    .result{
+      white-space: initial !important;
+    }
   }
