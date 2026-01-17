@@ -54,7 +54,7 @@ $fontName: 'LTSuperior';
     &-d-xl{
         font-family: var(--font-secondary);
         font-size: 238px;
-        line-height: auto;
+        line-height: 1;
     }
 
     &-d-l{
@@ -150,11 +150,17 @@ $fontName: 'LTSuperior';
         font-weight: 500;
     }
 
-    &-asub{}
+    &-asub{
+        font-family: var(--font-primary);
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
 
     &-ahsub{
         font-family: var(--font-primary);
-        font-size: 17px;
+        font-size: 20px;
         line-height: 1;
         letter-spacing: 7px;
         font-weight: 300;
@@ -164,5 +170,7 @@ $fontName: 'LTSuperior';
         font-family: var(--font-secondary);
         font-size: 29px;
         line-height: 60%;
+        letter-spacing: 2px;
+        font-weight: 700;
     }
 }
