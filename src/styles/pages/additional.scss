@@ -1,5 +1,15 @@
 
 
+
+      .tag {
+        border: 1px solid var(--c-brand);
+        padding: 6px 13px;
+        border-radius: 20px;
+        color: var(--c-brand);
+        background-color: var(--c-table);    
+        white-space: pre;
+      }
+      
 .additional-block {
   position: relative;    
   padding: 0 16px;
@@ -31,15 +41,6 @@
     .filter-tags {
       display: flex;
       gap: 10px;
-
-      .tag {
-        border: 1px solid var(--c-brand);
-        padding: 6px 13px;
-        border-radius: 20px;
-        color: var(--c-brand);
-        background-color: var(--c-table);    
-        white-space: pre;
-      }
     }
   }
 

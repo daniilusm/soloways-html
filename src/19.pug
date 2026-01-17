@@ -1,0 +1,14 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/checklist-page.scss")
+
+block main
+	include templates/mixins/checklist-row
+
+	include templates/pages/19
+
+	- const pageCount = "19"
+	include templates/widgets/footer

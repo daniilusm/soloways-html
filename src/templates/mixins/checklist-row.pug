@@ -1,0 +1,7 @@
+mixin checklist-row(label)
+  .checklist__row
+    span.checklist__parameter.typo-tv= label
+    .checklist__rating
+      //- Генерируем 10 пустых делений для оценки
+      each val in Array(10)
+        span.checklist__dot

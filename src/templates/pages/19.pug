@@ -1,0 +1,23 @@
+section.page-container
+  article.checklist
+    div.checklist__header
+      span.checklist__badge.tag.typo-td Чек-лист
+      h1.checklist__title.typo-h1 краткий опросник для самоконтроля
+      p.checklist__subtitle.typo-st Заполнить перед следующим визитом
+
+    .checklist__content
+      .checklist__table-head.typo-th
+        span.checklist__label Параметр
+        span.checklist__label Ваша оценка (0-10)
+
+      .checklist__list
+        +checklist-row('Уровень энергии утром')
+        +checklist-row('Отёчность ног вечером')
+        +checklist-row('Качество сна (непрерывность)')
+        +checklist-row('Частота головных болей')
+        +checklist-row('Тяга к сладкому')
+        +checklist-row('Интенсивность выпадения волос')
+        +checklist-row('Настроение и тревожность')
+        +checklist-row('Соблюдение питьевого режима')
+        +checklist-row('Частота выполнения венозной гимнастики')
+        +checklist-row('Общее удовлетворение самочувствием')
