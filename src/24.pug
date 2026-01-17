@@ -1,0 +1,23 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/database-table.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/database-row
+
+	- 
+		const heroData = {
+			title: 'анализ лабораторных данных',
+			imgUrl:"../images/star-20.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/24
+
+	- const pageCount = "24"
+	include templates/widgets/footer
