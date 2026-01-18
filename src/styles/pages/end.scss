@@ -21,13 +21,13 @@
 	}
 }
 
-.end-page{
+.end-page {
 	display: flex;
     flex-direction: column;
     align-items: center;
 	padding-top: 101px;
 	
-	&__logo{
+	&__logo {
 		height: 31px;
 		width: 60px;
 
@@ -36,7 +36,7 @@
 		margin-bottom: 162px;
 	}
 
-	&__end-img{
+	&__end-img {
         width: 350px;
         height: 184px;
 
@@ -46,7 +46,7 @@
 
 	}
 
-	&__line-img{    
+	&__line-img {    
         width: 150px;
         height: 110px;
 
@@ -73,6 +73,8 @@
 
         text-decoration: underline;
 
+        color: var(--c-info);
+
 	}
 
 	&__bottom {
@@ -91,7 +93,7 @@
             margin: 0;
         }
 
-        div{
+        div {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -104,6 +106,6 @@
     }
 }
 
-.container{
+.container {
 	background-color: var(--c-background);
 }
