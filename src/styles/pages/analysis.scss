@@ -1,0 +1,64 @@
+.analysis-section {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.analysis-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__body{
+    padding: 0 14px;
+    }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 150px 147px 147px 90px;
+    padding: 12px 26px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 150px 147px 147px 90px;
+    padding: 10px 12px;
+    align-items: center;
+    border-radius: 8px;
+
+    // Чередование фона строк (зебра)
+    &:nth-child(odd) {
+      background-color: var(--c-table);
+    }
+  }
+
+  &__cell {
+    color: #4b5563;
+
+    &--name {
+      color: #374151;
+    }
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 3px 13px;
+    border-radius: 3px;
+    min-width: 66px;
+    text-align: center;
+    color: var(--c-white);
+
+    // Специфические цвета статусов из макета
+    &--high {
+      background-color: #e9a1a1; // Светло-красный (повышен)
+    }
+
+    &--normal {
+      background-color: #94b9a9; // Шалфейный зеленый (норма)
+    }
+
+    &--low {
+      background-color: #93b2d1; // Приглушенный синий (понижен)
+    }
+  }
+}

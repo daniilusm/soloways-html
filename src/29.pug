@@ -1,0 +1,15 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/analysis.scss")
+	link(rel="stylesheet" href="styles/pages/info-table.scss")
+
+
+block main
+	include templates/mixins/analysis-row
+
+	include templates/pages/29
+
+	- const pageCount = "29"
+	include templates/widgets/footer

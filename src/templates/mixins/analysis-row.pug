@@ -1,0 +1,13 @@
+mixin analysis-row(name, symbol, value, unit, norm, status)
+  - const statusClass = { 'повышен': 'high', 'норма': 'normal', 'понижен': 'low' }[status]
+  
+  .analysis-table__row.typo-tv
+    .analysis-table__cell.analysis-table__cell--name
+      span= name
+      |  #{symbol}
+    .analysis-table__cell.analysis-table__cell--value
+      | #{value} #{unit}
+    .analysis-table__cell.analysis-table__cell--norm
+      | #{norm} #{unit}
+    .analysis-table__cell.analysis-table__cell--status
+      span(class=`analysis-table__badge typo-tt analysis-table__badge--${statusClass}`)= status

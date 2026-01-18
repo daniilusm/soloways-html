@@ -1,0 +1,29 @@
+div.cards-wrapper 
+  div.block-header
+    .title-group
+      h2.typo-h2 Определение химических элементов (волосы)
+    .filter-tags
+      span.tag.typo-td 29 янв 2025
+        
+section.analysis-section
+  .analysis-table
+    div.analysis-table__header.typo-th
+      .analysis-table__head-cell Название
+      .analysis-table__head-cell Количество
+      .analysis-table__head-cell Норма
+      .analysis-table__head-cell Состояние
+
+    div.analysis-table__body
+        +analysis-row('Кальций', '(Ca)', '6202', 'мкг/г', '250–4000', 'повышен')
+        +analysis-row('Калий', '(K)', '48', 'мкг/г', '30–1000', 'норма')
+        +analysis-row('Магний', '(Mg)', '764', 'мкг/г', '25–500', 'повышен')
+        +analysis-row('Натрий', '(Na)', '127', 'мкг/г', '30–2500', 'норма')
+        +analysis-row('Фосфор', '(P)', '228', 'мкг/г', '120–250', 'норма')
+        +analysis-row('Кобальт', '(Co)', '0.0768', 'мкг/г', '0.004–0.3', 'норма')
+        +analysis-row('Железо', '(Fe)', '93', 'мкг/г', '7–70', 'повышен')
+        +analysis-row('Йод', '(I)', '0.662', 'мкг/г', '0.15–10', 'норма')
+        +analysis-row('Марганец', '(Mn)', '11', 'мкг/г', '0.25–7', 'повышен')
+        +analysis-row('Медь', '(Cu)', '15', 'мкг/г', '9–50', 'норма')
+        +analysis-row('Молибден', '(Mo)', '0.0145', 'мкг/г', '0.015–0.1', 'понижен')
+        +analysis-row('Селен', '(Se)', '0.106', 'мкг/г', '0.2–2', 'понижен')
+        +analysis-row('Хром', '(Cr)', '0.105', 'мкг/г', '0.04–1', 'норма')
