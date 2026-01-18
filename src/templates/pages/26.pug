@@ -1,0 +1,39 @@
+div.cards-wrapper 
+  div.block-header
+    .title-group
+      h2.typo-h2 Биохимические исследования крови
+    .filter-tags
+      span.tag.typo-td 4 окт 2025
+        
+section.analysis-section
+  .analysis-table
+    div.analysis-table__header.typo-th
+      .analysis-table__head-cell Название
+      .analysis-table__head-cell Количество
+      .analysis-table__head-cell Норма
+      .analysis-table__head-cell Состояние
+
+    div.analysis-table__body
+        +analysis-row('25-OH витамин D, суммарный ', '(кальциферол)', '52.3', 'нг/мл', '30–60', 'норма')
+        +analysis-row('С-реактивный белок', '', '0.34', 'мкг/г', '<5.00', 'норма')
+        +analysis-row('Ферритин', '', '34.3', 'мкг/г', '10.0–150.0', 'норма')
+
+div.cards-wrapper 
+  div.block-header
+    .title-group
+      h2.typo-h2 Гормоны
+    .filter-tags
+      span.tag.typo-td 7 мар 2025
+        
+section.analysis-section
+  .analysis-table
+    div.analysis-table__header.typo-th
+      .analysis-table__head-cell Название
+      .analysis-table__head-cell Количество
+      .analysis-table__head-cell Норма
+      .analysis-table__head-cell Состояние
+
+    div.analysis-table__body
+        +analysis-row('Тиреотропный гормон ', '(ТТГ)', '1.3284', 'мкМЕ/мл', '0.3500–4.9400', 'норма')
+        +analysis-row('Трийодтиронин свободный', '(Т3 свободный)', '4.48', 'пмоль/л', '2.43–6.01', 'норма')
+        +analysis-row('Тироксин свободный', '(Т4 свободный)', '12.82', 'пмоль/л', '9.00–19.05', 'норма')
