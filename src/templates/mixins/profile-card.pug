@@ -1,0 +1,25 @@
+mixin profile-header(data)
+  div.user-profile
+    .user-profile__main-info
+      .user-profile__avatar-container
+        img.user-profile__avatar(src=data.avatarUrl alt="User Avatar")
+      
+      .user-profile__details
+        h1.user-profile__name.typo-as= data.fullName
+        
+        .user-profile__stats-grid.typo-tv
+          .user-profile__stat-item
+            span.user-profile__icon.user-profile__icon--gender
+            span.user-profile__stat-text= data.gender
+          .user-profile__stat-item
+            span.user-profile__icon.user-profile__icon--age
+            span.user-profile__stat-text= data.age
+          .user-profile__stat-item
+            span.user-profile__icon.user-profile__icon--height
+            span.user-profile__stat-text= data.height
+          .user-profile__stat-item
+            span.user-profile__icon.user-profile__icon--weight
+            span.user-profile__stat-text= data.weight
+          .user-profile__reason-box
+            span.user-profile__reason-label.typo-tl Причина обращения:
+            p.user-profile__reason-text.typo-tv= data.reason

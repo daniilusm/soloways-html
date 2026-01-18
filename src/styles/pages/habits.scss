@@ -1,0 +1,55 @@
+.habits-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8px 20px;
+}
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Три колонки согласно макету
+  gap: 56px;
+  align-items: start;
+}
+
+.habit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__title {
+    margin: 0;
+    color: var(--c-main-text);
+  }
+
+  &__rating {
+    display: flex;
+    gap: 4px;
+    flex-wrap: nowrap;
+  }
+
+  &__dot {
+    width: 7px;
+    height: 16px;
+    background-color: var(--c-table); // Цвет пустых делений
+    border-radius: 6px;
+    display: inline-block;
+
+    // Цвета активных делений на основе макета
+    &--active-yellow {
+      background-color: var(--c-yellow); 
+    }
+    
+    &--active-green {
+      background-color: var(--c-green);
+    }
+
+    &--active-red {
+      background-color: var(--c-red);
+    }
+  }
+
+  &__description {
+    margin: 0;
+    color: var(--c-main-text);
+  }
+}

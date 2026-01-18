@@ -1,0 +1,18 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/profile-card.scss")
+	link(rel="stylesheet" href="styles/pages/info-table.scss")
+	link(rel="stylesheet" href="styles/pages/habits.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/profile-card
+	include templates/mixins/habit
+
+	include templates/pages/21
+
+	- const pageCount = "21"
+	include templates/widgets/footer

@@ -1,0 +1,11 @@
+mixin rating-scale(activeCount, colorClass)
+  .habit-card__rating
+    each val in Array(12).fill(0).map((_, i) => i < activeCount)
+      span.habit-card__dot(class=val ? `habit-card__dot--active-${colorClass}` : '')
+
+//- Миксин для карточки привычки
+mixin habit-item(title, activeDots, color, text)
+  article.habit-card
+    h3.habit-card__title.typo-tv= title
+    +rating-scale(activeDots, color)
+    p.habit-card__description.typo-tl= text
