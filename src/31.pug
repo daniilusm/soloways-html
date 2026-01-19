@@ -1,0 +1,15 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/info-table.scss")
+	link(rel="stylesheet" href="styles/pages/genetic-row.scss")
+
+
+block main
+	include templates/mixins/genetic-row
+
+	include templates/pages/31
+
+	- const pageCount = "31"
+	include templates/widgets/footer

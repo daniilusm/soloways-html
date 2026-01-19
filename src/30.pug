@@ -1,0 +1,24 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/info-table.scss")
+	link(rel="stylesheet" href="styles/pages/genetic-row.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/genetic-row
+
+	- 
+		const heroData = {
+			title: 'анализ генов',
+			imgUrl:"../images/star-30.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/30
+
+	- const pageCount = "30"
+	include templates/widgets/footer

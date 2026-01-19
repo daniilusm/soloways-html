@@ -1,0 +1,42 @@
+.generic-profile{    
+    padding: 0 9px;
+}
+
+.genetic-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__section{
+    margin-bottom: 10px;
+}
+
+  &__header {
+    display: grid;
+    grid-template-columns: 80px 104px 350px;
+    padding:12px 20px 7px;
+  }
+
+  &__head-cell {
+    color: #333333;
+  }
+
+  &__section-title {
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 80px 104px 350px;
+    padding: 13px 20px;
+    align-items: start;
+  }
+
+  &__cell {
+    color: #333333;
+
+    &--genotype { color: #666666; }
+  }
+}
