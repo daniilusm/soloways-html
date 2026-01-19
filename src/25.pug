@@ -7,18 +7,9 @@ block css
 
 
 block main
-	include templates/widgets/hero
 	include templates/mixins/dynamic-row
 
-	- 
-		const heroData = {
-			title: 'анализ лабораторных данных',
-			imgUrl:"../images/star-24.webp"
-		}
+	include templates/pages/25
 
-	+hero(heroData)
-
-	include templates/pages/24
-
-	- const pageCount = "24"
+	- const pageCount = "25"
 	include templates/widgets/footer

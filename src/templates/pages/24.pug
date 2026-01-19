@@ -1,0 +1,28 @@
+div.cards-wrapper 
+  div.block-header
+      .title-group
+        h2.typo-h2 Анализ исторических данных
+
+section.dynamics-container
+  .dynamics-table
+    div.dynamics-table__header.typo-th
+      .dynamics-table__head-cell Показатель
+      .dynamics-table__head-cell До
+      .dynamics-table__head-cell После
+      .dynamics-table__head-cell Состояние
+
+    //- Секция Углеводный обмен
+    .dynamics-table__section
+        div.gray-label
+          h2.gray-label__title.typo-as=  'Углеводный обмен'
+        .dynamics-table__body
+          +dynamic-row('Глюкоза крови', '5.12 ммоль/л', '11.12.2025', '4.82 ммоль/л', '15.12.2025', 'Осталось в пределах нормы')
+          +dynamic-row('Гликозилированный гемоглобин (HbA1c)', '5.21 %', '04.03.2024', '5.27 %', '11.12.2025', 'Практически не изменился, указывает на стабильный компенсированный обмен')
+          +dynamic-row('Иммунореактивный инсулин', '15.75 uIU/mL', '11.12.2025', '17.81 uIU/mL', '15.12.2025', 'Умеренный рост в пределах референса')
+
+    //- Секция Запасы железа
+    .dynamics-table__section
+        div.gray-label
+          h2.gray-label__title.typo-as=  'Запасы железа'
+        .dynamics-table__body
+          +dynamic-row('Ферритин', '57.2 мкг/л', '07.10.2022', '40.5 мкг/л', '11.12.2025', 'Снижение до 16.4 мкг/л (07.05.2024) с последующим постепенным ростом. Восстановление до средне-нормального уровня')

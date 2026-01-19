@@ -1,0 +1,43 @@
+.dynamics-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+    padding: 0 9px;
+}
+
+.dynamics-table {
+  display: flex;
+  flex-direction: column;
+  color: var(--c-main-text);
+
+  &__header {
+    display: grid;
+    grid-template-columns: 150px 116px 116px 150px;
+    padding: 10px 20px;
+  }
+
+  &__section {
+    margin-bottom: 16px;
+  }
+
+  &__section-title {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 0 0 10px 0;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 150px 116px 116px 150px;
+    align-items: center;
+  }
+
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 20px;
+  }
+
+  &__date {
+    color: var(--c-sutitle-text); // Серый цвет для дат под значениями
+  }
+}

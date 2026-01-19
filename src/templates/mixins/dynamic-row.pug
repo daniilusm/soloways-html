@@ -1,0 +1,10 @@
+mixin dynamic-row(name, before, beforeDate, after, afterDate, status)
+  .dynamics-table__row.typo-tv
+    .dynamics-table__cell.dynamics-table__cell--name= name
+    .dynamics-table__cell.dynamics-table__cell--before
+      span.dynamics-table__value= before
+      span.dynamics-table__date.typo-tl= beforeDate
+    .dynamics-table__cell.dynamics-table__cell--after
+      span.dynamics-table__value= after
+      span.dynamics-table__date.typo-tl= afterDate
+    .dynamics-table__cell.dynamics-table__cell--status= status
