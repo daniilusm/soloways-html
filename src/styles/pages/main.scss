@@ -65,6 +65,12 @@
 
 	&__left{
 		width: 111.1mm;
+
+		h4{
+			font-family: var(--font-primary);
+			letter-spacing: 0.1mm;
+    		font-size: 9.8mm;
+		}
 	}
 
 	&__right{
@@ -86,7 +92,11 @@
 	}
 
 	&__footer{
-    	letter-spacing: 0.5mm;
+    	letter-spacing: 0.4mm;
+		font-family: var(--font-primary);
+		font-size: 3.6mm;
+		line-height: 98%;
+		font-weight: 300;
 	}
 }
 
