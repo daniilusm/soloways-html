@@ -1,4 +1,6 @@
-mixin info-row(label, text)
+mixin info-row(label, text, subtexts)
   .info-card__row
-    p.info-card__label.typo-th= label
+    p.info-card__label.typo-th
+      span= label
+      span!= subtexts
     p.info-card__content.typo-tl!= text
