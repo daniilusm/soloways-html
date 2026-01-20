@@ -1,20 +1,20 @@
 .habits-container {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 8px 20px;
+  padding: 0 2.8mm 7.1mm;
 }
 
 .habits-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); // Три колонки согласно макету
-  gap: 56px;
+  gap: 19.8mm;
   align-items: start;
 }
 
 .habit-card {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 1.8mm;
 
   &__title {
     margin: 0;
@@ -23,15 +23,15 @@
 
   &__rating {
     display: flex;
-    gap: 4px;
+    gap: 1.4mm;
     flex-wrap: nowrap;
   }
 
   &__dot {
-    width: 7px;
-    height: 16px;
+    width: 2.5mm;
+    height: 5.6mm;
     background-color: var(--c-table); // Цвет пустых делений
-    border-radius: 6px;
+    border-radius: 2.1mm;
     display: inline-block;
 
     // Цвета активных делений на основе макета

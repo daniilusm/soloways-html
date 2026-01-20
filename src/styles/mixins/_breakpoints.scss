@@ -1,7 +1,7 @@
-$mobile: 700px; // target 360
-$tablet: 1100px; // target 768
-$laptop: 1600px; // target 1440
-$desktop: 1920px; // target 1920
+$mobile: 246.9mm; // target 360
+$tablet: 388.0mm; // target 768
+$laptop: 564.3mm; // target 1440
+$desktop: 677.2mm; // target 1920
 
 @mixin bp-mobile-only() {
 	@media (max-width: $mobile) {
@@ -10,13 +10,13 @@ $desktop: 1920px; // target 1920
 }
 
 @mixin bp-tablet-only() {
-	@media (min-width: $mobile + 0.1px) and (max-width: $tablet) {
+	@media (min-width: $mobile + 0.0mm) and (max-width: $tablet) {
 		@content;
 	}
 }
 
 @mixin bp-tablet-up() {
-	@media (min-width: $mobile + 0.1px) {
+	@media (min-width: $mobile + 0.0mm) {
 		@content;
 	}
 }
@@ -28,13 +28,13 @@ $desktop: 1920px; // target 1920
 }
 
 @mixin bp-laptop-only() {
-	@media (min-width: $tablet + 0.1px) and (max-width: $laptop) {
+	@media (min-width: $tablet + 0.0mm) and (max-width: $laptop) {
 		@content;
 	}
 }
 
 @mixin bp-laptop-up() {
-	@media (min-width: $tablet + 0.1px) {
+	@media (min-width: $tablet + 0.0mm) {
 		@content;
 	}
 }
@@ -46,13 +46,13 @@ $desktop: 1920px; // target 1920
 }
 
 @mixin bp-desktop-only() {
-	@media (min-width: $laptop + 0.1px) and (max-width: $desktop) {
+	@media (min-width: $laptop + 0.0mm) and (max-width: $desktop) {
 		@content;
 	}
 }
 
 @mixin bp-desktop-up() {
-	@media (min-width: $laptop + 0.1px) {
+	@media (min-width: $laptop + 0.0mm) {
 		@content;
 	}
 }

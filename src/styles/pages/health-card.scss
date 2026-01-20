@@ -1,12 +1,12 @@
 .wellness-section {    
-    margin-bottom: 32px;
+    margin-bottom: 11.3mm;
 }
 
 .health-row {
   display: flex;
-  gap: 82px; 
+  gap: 28.9mm; 
   
-    padding: 3px 14px;
+    padding: 1.1mm 4.9mm;
 }
 
 .health-card {
@@ -15,9 +15,9 @@
   color: var(--c-sutitle-text);
 
   &__header {
-    border-bottom: 1px solid var(--c-separator); // Жирная серая линия под заголовком
-    padding-bottom: 5px;
-    margin-bottom: 6px;
+    border-bottom: 0.4mm solid var(--c-separator); // Жирная серая линия под заголовком
+    padding-bottom: 1.8mm;
+    margin-bottom: 2.1mm;
   }
 
   &__title {
@@ -25,7 +25,7 @@
   }
 
   &__body {
-    padding-right: 10px;
+    padding-right: 3.5mm;
   }
 
   &__text {

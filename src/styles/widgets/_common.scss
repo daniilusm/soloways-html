@@ -1,25 +1,30 @@
+
+	@page { 
+		size: A4; margin: 0;
+	};
+	
 html,
 body {
-	height: 100%;
+      margin: 0;
+      padding: 0;
 }
 
 
-.wrapper {
-	// padding: 32px 0;
-	    scale: 1.51;
-    transform-origin: top;
+body {
+	padding: 6mm 0;
 }
 
 .main {
 	position: relative;
+	break-inside: avoid;
 
 	width: 100%;
-	min-height: 842px;
-	max-height: 842px;
-	max-width: calc(var(--container-max-width));
+	min-height: 297.0mm;
+	max-height: 297.0mm;
+	width: 210mm;
 	margin: 0 auto;
 
-    // box-shadow: 0px 0px 80px #cccccc;
+    box-shadow: 0.0mm 0.0mm 80.0mm #cccccc;
 
 	background-color: var(--c-white);
 }
@@ -32,19 +37,19 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 
-	height: 275px;
-	padding: 26px 20px;
+	height: 97.0mm;
+	padding: 9.2mm 7.1mm;
 
-	margin-bottom: 60px;
+	margin-bottom: 21.2mm;
 
 	&__star-img{
 		position: absolute;
-		bottom: -36px;
-    	right: 20px;
+		bottom: -12.7mm;
+    	right: 7.1mm;
 		z-index: 2;
 
-		width: 140px;
-		height: 140px;    
+		width: 49.4mm;
+		height: 49.4mm;    
 		
 		object-fit: contain;
 
@@ -58,7 +63,7 @@ body {
 		width: 100%;
 		height: 100%;
 		background-color: var(--c-background);
-		border-radius: 20px;
+		border-radius: 7.1mm;
 		overflow: hidden;
 	}
 
@@ -66,15 +71,15 @@ body {
 		position: relative;
 		z-index: 1;
 
-		width: 450px;
+		width: 158.7mm;
 
 		h1{
-			margin-bottom: 12px;
+			margin-bottom: 4.2mm;
 			color: var(--c-heading-text);
 		}
 
 		p{
-			width: 367px;
+			width: 129.4mm;
 			color: var(--c-sutitle-text);
 		}
 	}
@@ -84,21 +89,21 @@ body {
     	align-items: center;
 		opacity: 0;
 		z-index: 1;
-		padding: 8px 16px;
+		padding: 2.8mm 5.6mm;
 
 		color: var(--c-white);
 
-		border-radius: 100px;
-		margin-bottom: 16px;
+		border-radius: 35.3mm;
+		margin-bottom: 5.6mm;
 
 		svg	{
-			width: 9px;
-			height: 9px;
+			width: 3.2mm;
+			height: 3.2mm;
 		}
 
 		p {
 			margin: 0;
-			margin-left: 9px;
+			margin-left: 3.2mm;
     		white-space: break-spaces;
 		}
 	}
@@ -119,13 +124,13 @@ body {
 .section-label{
     display: flex;
     align-items: center;
-    gap: 9px;
-    padding: 7px 12px;
+    gap: 3.2mm;
+    padding: 2.5mm 4.2mm;
     color: var(--c-white);
-    border-radius: 6px;
-    width: 531px;
-	min-height: 32px;
-    margin: 24px auto 0;
+    border-radius: 2.1mm;
+    width: 187.3mm;
+	min-height: 11.3mm;
+    margin: 8.5mm auto 0;
 
     p{
 		display: inline-flex;
@@ -135,7 +140,7 @@ body {
 }
 
 .block-wrapper{
-    width: 531px;
+    width: 187.3mm;
     margin: 0 auto;
 }
 
@@ -152,29 +157,29 @@ body {
 }
 
 .description-tex{
-	margin-top: 20px;
+	margin-top: 7.1mm;
 	white-space: pre-wrap;
 }
 
 .effect-banner{
 
 	&__svg{
-	width: 18px;
-	height: 18px;
+	width: 6.3mm;
+	height: 6.3mm;
 	background-color: var(--c-white);
 	color: var(--c-green);
 	border-radius: 50%;
-	margin-right: 10px;
-	padding: 3px;
+	margin-right: 3.5mm;
+	padding: 1.1mm;
 	
 }
 }
 
 .gray-label{
     background-color: var(--c-table); // Светло-серый фон заголовка
-    padding: 14px 20px;
-    border-radius: 6px;
-    margin-bottom: 10px;
+    padding: 4.9mm 7.1mm;
+    border-radius: 2.1mm;
+    margin-bottom: 3.5mm;
 
   &__title {
     margin: 0;
@@ -186,23 +191,33 @@ body {
 .text-grid{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	column-gap: 40px;
-	margin-bottom: 10px;
+	column-gap: 14.1mm;
+	margin-bottom: 3.5mm;
 
 	p{
-		padding: 0 10px 10px;
+		padding: 0 3.5mm 3.5mm;
 		margin: 0;
 	}
 
 }
 
 @media print {
-	@page { 
-		size: A4; margin: 1in;
-	};
 
 	* {
     	-webkit-print-color-adjust: exact !important; // Для Chrome, Safari, Edge
     	print-color-adjust: exact !important;         // Стандарт
   	}
+
+	.main {
+        margin: 0 !important;
+        box-shadow: none !important;
+	}
+
+	body {
+		padding: 0;
+		width: 100%;
+
+		// scale: 1.39;
+		// transform-origin: top left;
+	}
 }

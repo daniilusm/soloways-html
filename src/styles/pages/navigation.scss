@@ -7,12 +7,12 @@
         justify-content: center;
         align-items: flex-end;
 
-        height: 275px;
+        height: 97.0mm;
         width: 100%;
-        padding: 30px;
-        margin-bottom: 45px;
+        padding: 10.6mm;
+        margin-bottom: 15.9mm;
 
-        border-radius: 20px;
+        border-radius: 7.1mm;
 
         background-color: var(--c-background);
 
@@ -31,24 +31,24 @@
     &__list{
         display: flex;
         flex-direction: column;
-        gap: 23px;
+        gap: 8.1mm;
         padding: 0;
-        margin: 0 17px 0 20px;
+        margin: 0 6.0mm 0 7.1mm;
 
             a{
                 display: flex;
                 justify-content: space-between;
-                gap: 8px;
+                gap: 2.8mm;
 
 
             &:not(:last-child){
-                border-bottom: 1px solid var(--c-separator);
+                border-bottom: 0.4mm solid var(--c-separator);
             }
 
                 span{
                     &:first-child{
                         color: var(--c-main-text);
-                        padding: 9px 0 6px;
+                        padding: 3.2mm 0 2.1mm;
                     }
 
                     &:last-child{

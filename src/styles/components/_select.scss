@@ -3,7 +3,7 @@
 /* select {
 	appearance: none;
 	width: 100%;
-	border: 1px solid #eeeeee;
+	border: 0.4mm solid #eeeeee;
 	border-radius: 0;
 	padding: var(--spacing-12) var(--spacing-20);
 
@@ -28,7 +28,7 @@
 	&__label {
 		position: relative;
 		height: 4.44rem;
-		border: 1px solid #ccc;
+		border: 0.4mm solid #ccc;
 		border-radius: 0.4rem;
 		background-color: #fff;
 		cursor: pointer;

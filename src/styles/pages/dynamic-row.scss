@@ -1,7 +1,7 @@
 .dynamics-container {
   margin: 0 auto;
   box-sizing: border-box;
-    padding: 0 9px;
+    padding: 0 3.2mm;
 }
 
 .dynamics-table {
@@ -11,30 +11,30 @@
 
   &__header {
     display: grid;
-    grid-template-columns: 150px 116px 116px 150px;
-    padding: 10px 20px;
+    grid-template-columns: 52.9mm 40.9mm 40.9mm 52.9mm;
+    padding: 3.5mm 7.1mm;
   }
 
   &__section {
-    margin-bottom: 16px;
+    margin-bottom: 5.6mm;
   }
 
   &__section-title {
-    padding: 15px 20px;
-    border-radius: 8px;
-    margin: 0 0 10px 0;
+    padding: 5.3mm 7.1mm;
+    border-radius: 2.8mm;
+    margin: 0 0 3.5mm 0;
   }
 
   &__row {
     display: grid;
-    grid-template-columns: 150px 116px 116px 150px;
+    grid-template-columns: 52.9mm 40.9mm 40.9mm 52.9mm;
     align-items: center;
   }
 
   &__cell {
     display: flex;
     flex-direction: column;
-    padding: 7px 20px;
+    padding: 2.5mm 7.1mm;
   }
 
   &__date {

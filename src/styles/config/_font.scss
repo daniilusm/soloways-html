@@ -53,13 +53,13 @@ $fontName: 'LTSuperior';
 
     &-d-xl{
         font-family: var(--font-secondary);
-        font-size: 238px;
+        font-size: 83.9mm;
         line-height: 1;
     }
 
     &-d-l{
         font-family: var(--font-primary);
-        font-size: 74px;
+        font-size: 26.1mm;
         line-height: 92%;
         font-weight: 300;
 
@@ -68,7 +68,7 @@ $fontName: 'LTSuperior';
 
     &-d-m{
         font-family: var(--font-primary);
-        font-size: 72px;
+        font-size: 25.4mm;
         line-height: 1;
         font-weight: 300;
     }
@@ -78,14 +78,14 @@ $fontName: 'LTSuperior';
 
     &-h1{
         font-family: var(--font-primary);
-        font-size: 44px;
+        font-size: 15.5mm;
         line-height: 91%;
         font-weight: 300;
     }
 
     &-h2{
         font-family: var(--font-secondary);
-        font-size: 24px;
+        font-size: 8.5mm;
         line-height: 100%;
         font-weight: 500;
     }
@@ -94,43 +94,43 @@ $fontName: 'LTSuperior';
 
     &-st{
         font-family: var(--font-secondary);
-        font-size: 12px;
+        font-size: 4.2mm;
         line-height: 120%;
-        letter-spacing: 0.25px;
+        letter-spacing: 0.1mm;
     }
 
     //table
 
     &-th{
         font-family: var(--font-secondary);
-        font-size: 11px;
+        font-size: 3.9mm;
         line-height: 120%;
         font-weight: 600;
     }
 
     &-tv{
         font-family: var(--font-secondary);
-        font-size: 10px;
+        font-size: 3.5mm;
         line-height: 120%;
         font-weight: 500;
     }
 
     &-tl{
         font-family: var(--font-secondary);
-        font-size: 8px;
+        font-size: 2.8mm;
         line-height: 136%;
         font-weight: 400;
     }
 
     &-td{
         font-family: var(--font-secondary);
-        font-size: 8px;
+        font-size: 2.8mm;
         line-height: 100%;
     }
 
     &-tt{
         font-family: var(--font-secondary);
-        font-size: 10px;
+        font-size: 3.5mm;
         line-height: 100%;
     }
 
@@ -138,40 +138,40 @@ $fontName: 'LTSuperior';
 
     &-as{
         font-family: var(--font-secondary);
-        font-size: 15px;
+        font-size: 5.3mm;
         line-height: 100%;
         font-weight: 400;
-        letter-spacing: -0.15px;
+        letter-spacing: -0.1mm;
     }
 
     &-at{
         font-family: var(--font-secondary);
-        font-size: 28px;
+        font-size: 9.9mm;
         line-height: 100%;
         font-weight: 500;
     }
 
     &-asub{
         font-family: var(--font-primary);
-        font-size: 20px;
+        font-size: 7.1mm;
         line-height: 1;
-        letter-spacing: 3px;
+        letter-spacing: 1.1mm;
         font-weight: 300;
     }
 
     &-ahsub{
         font-family: var(--font-primary);
-        font-size: 20px;
+        font-size: 7.1mm;
         line-height: 1;
-        letter-spacing: 7px;
+        letter-spacing: 2.5mm;
         font-weight: 300;
     }
 
     &-aft{
         font-family: var(--font-secondary);
-        font-size: 29px;
+        font-size: 10.2mm;
         line-height: 60%;
-        letter-spacing: 2px;
+        letter-spacing: 0.7mm;
         font-weight: 700;
     }
 }

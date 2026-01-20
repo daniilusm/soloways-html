@@ -1,6 +1,6 @@
 .profile-container{
-    padding: 0 16px;
-    margin: 6px 0 48px;
+    padding: 0 5.6mm;
+    margin: 2.1mm 0 16.9mm;
 }
 
 .user-profile {
@@ -8,18 +8,18 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--c-secondary); // Светлый фон карточки
-  padding: 12px;
-  border-radius: 20px;
+  padding: 4.2mm;
+  border-radius: 7.1mm;
 
   &__main-info {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 5.6mm;
   }
 
   &__avatar-container {
-    width: 120px;
-    height: 135px;
+    width: 42.3mm;
+    height: 47.6mm;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -34,31 +34,31 @@
   &__details {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding-top: 8px;
+    gap: 5.6mm;
+    padding-top: 2.8mm;
   }
 
   &__name {
     margin: 0;
-    font-size: 20px;
+    font-size: 7.1mm;
     color: var(--c-main-text);
   }
 
   &__stats-grid {
     display: grid;
-    grid-template-columns: 93px 93px 136px;
-    grid-template-rows: repeat(2, 32px);
-    column-gap: 23px;
-    row-gap: 8px;
+    grid-template-columns: 32.8mm 32.8mm 48.0mm;
+    grid-template-rows: repeat(2, 11.3mm);
+    column-gap: 8.1mm;
+    row-gap: 2.8mm;
   }
 
   &__stat-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3.5mm;
     background-color: var(--c-white);
-    padding: 3px 6px;
-    border-radius: 100px; // Овальные капсулы из макета
+    padding: 1.1mm 2.1mm;
+    border-radius: 35.3mm; // Овальные капсулы из макета
   }
 
   &__stat-text {
@@ -68,8 +68,8 @@
   }
 
   &__icon {
-    min-width: 24px;
-    min-height: 24px;
+    min-width: 8.5mm;
+    min-height: 8.5mm;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,11 +86,11 @@
     grid-row: 1 / 3;
     grid-column-start: 3;
     background-color: var(--c-white);
-    padding: 12px;
-    border-radius: 16px;
+    padding: 4.2mm;
+    border-radius: 5.6mm;
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 0.4mm;
   }
 
   &__reason-label {

@@ -3,7 +3,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 
-  margin-bottom: 40px;
+  margin-bottom: 14.1mm;
 }
 
 .analysis-table {
@@ -12,21 +12,21 @@
   width: 100%;
 
   &__body{
-    padding: 0 14px;
+    padding: 0 4.9mm;
     }
 
   &__header {
     display: grid;
-    grid-template-columns: 150px 147px 147px 90px;
-    padding: 12px 26px;
+    grid-template-columns: 52.9mm 51.8mm 51.8mm 31.7mm;
+    padding: 4.2mm 9.2mm;
   }
 
   &__row {
     display: grid;
-    grid-template-columns: 150px 147px 147px 90px;
-    padding: 10px 12px;
+    grid-template-columns: 52.9mm 51.8mm 51.8mm 31.7mm;
+    padding: 3.5mm 4.2mm;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 2.8mm;
 
     // Чередование фона строк (зебра)
     &:nth-child(odd) {
@@ -44,9 +44,9 @@
 
   &__badge {
     display: inline-block;
-    padding: 3px 13px;
-    border-radius: 3px;
-    min-width: 66px;
+    padding: 1.1mm 4.6mm;
+    border-radius: 1.1mm;
+    min-width: 23.3mm;
     text-align: center;
     color: var(--c-white);
 

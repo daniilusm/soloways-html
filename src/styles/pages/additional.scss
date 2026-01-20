@@ -1,7 +1,7 @@
 .tag {
-        border: 0.6px solid var(--c-brand);
-        padding: 6px 13px 5px;
-        border-radius: 20px;
+        border: 0.2mm solid var(--c-brand);
+        padding: 2.1mm 4.6mm 1.8mm;
+        border-radius: 7.1mm;
         color: var(--c-brand);
         background-color: var(--c-table);    
         white-space: pre;
@@ -9,13 +9,13 @@
       
 .additional-block {
   position: relative;    
-  padding: 0 16px;
+  padding: 0 5.6mm;
 
   .block-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 11px;
+    margin-bottom: 3.9mm;
 
     h2 {
 		display: inline-flex;
@@ -24,11 +24,11 @@
       &::before {
         content: '';
 		    display: block;
-		    min-width: 10px;
-		    min-height: 10px;
-		    width: 10px;
-		    height: 10px;
-        margin-right: 10px;
+		    min-width: 3.5mm;
+		    min-height: 3.5mm;
+		    width: 3.5mm;
+		    height: 3.5mm;
+        margin-right: 3.5mm;
 		    border-radius: 50%;
 
         background-color: var(--c-violet);
@@ -37,19 +37,19 @@
 
     .filter-tags {
       display: flex;
-      gap: 10px;
+      gap: 3.5mm;
     }
   }
 
   .block-description {
     color: var(--c-sutitle-text);
-    width: 320px;
-    margin-bottom: 42px;
+    width: 112.9mm;
+    margin-bottom: 14.8mm;
   }
 
   .supplements-table {
     display: grid;
-    grid-template-columns: 113px 110px 135px 177px;
+    grid-template-columns: 39.9mm 38.8mm 47.6mm 62.4mm;
     gap: 0;
 
     .table-row {
@@ -58,15 +58,15 @@
       grid-column: 1 / -1;
       display: grid;
     	align-items: center;
-    //   padding: 18px 20px;
-      border-radius: 8px;
+    //   padding: 6.3mm 7.1mm;
+      border-radius: 2.8mm;
 
       a{
         text-decoration: underline;
       }
 
       a,span {
-        padding: 11px 14px;
+        padding: 3.9mm 4.9mm;
 
 		&:nth-child(2),&:first-child {
 			white-space: pre;
@@ -78,10 +78,10 @@
       }
 
       &.header {
-        margin-bottom: 10px;
+        margin-bottom: 3.5mm;
 
 		span{
-        	padding: 0 14px;
+        	padding: 0 4.9mm;
 		}
       }
 
@@ -91,7 +91,7 @@
     }
 
       .name a {
-        text-underline-offset: 3px;
+        text-underline-offset: 1.1mm;
         text-decoration: underline;
       }
 
@@ -115,7 +115,7 @@
 
 
     .block-header {
-      margin-bottom: 43px;
+      margin-bottom: 15.2mm;
     }
 
     .result{

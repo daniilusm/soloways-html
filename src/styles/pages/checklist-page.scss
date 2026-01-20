@@ -1,12 +1,12 @@
 .page-container {
-  padding: 60px 37px 40px;
+  padding: 21.2mm 13.0mm 14.1mm;
   box-sizing: border-box;
   background-color: var(--c-white);
   display: flex;
   flex-direction: column;
   position: relative;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 7.1mm;
 }
 
 .checklist {
@@ -15,17 +15,17 @@
   height: 100%;
 
   &__header {
-    margin-bottom: 90px;
+    margin-bottom: 31.7mm;
   }
 
   &__badge {
     position: absolute;    
-    top: 15px;
-    right: 15px;
+    top: 5.3mm;
+    right: 5.3mm;
   }
 
   &__title {
-    margin: 42px 0 12px;
+    margin: 14.8mm 0 4.2mm;
     color: var(--c-heading-text);
   }
 
@@ -36,21 +36,21 @@
 
   &__content {
     flex-grow: 1;
-    padding-right: 32px;
+    padding-right: 11.3mm;
     color: var(--c-main-text);
   }
 
   &__table-head {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 13px;
-    border-bottom: 1px solid var(--c-separator);
+    padding-bottom: 4.6mm;
+    border-bottom: 0.4mm solid var(--c-separator);
   }
 
   &__label {
 
     &:last-child{
-        margin-right: 10px;
+        margin-right: 3.5mm;
     }
   }
 
@@ -58,8 +58,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
-    padding-right: 10px;
+    padding: 4.2mm 0;
+    padding-right: 3.5mm;
   }
 
   &__parameter {
@@ -67,14 +67,14 @@
 
   &__rating {
     display: flex;
-    gap: 3px;
+    gap: 1.1mm;
   }
 
   &__dot {
-    width: 7px;
-    height: 16px;
+    width: 2.5mm;
+    height: 5.6mm;
     background-color: var(--c-table);
-    border-radius: 4px;
+    border-radius: 1.4mm;
     display: inline-block;
   }
 }

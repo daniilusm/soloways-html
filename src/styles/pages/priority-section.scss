@@ -1,23 +1,23 @@
 .priority-block {
-    padding: 0 16px;
+    padding: 0 5.6mm;
 
   &__header {
     background-color: var(--c-red);
     display: flex;
     align-items: center;
-    gap: 9px;
-    padding: 7px 12px;
+    gap: 3.2mm;
+    padding: 2.5mm 4.2mm;
     color: var(--c-white);
-    border-radius: 6px;
+    border-radius: 2.1mm;
   }
 
   &__icon {
     background: #fff;
     color: var(--c-red);
-    font-size: 13px;
+    font-size: 4.6mm;
     font-family: var(--font-secondary);
-    width: 18px;
-    height: 18px;
+    width: 6.3mm;
+    height: 6.3mm;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -30,22 +30,22 @@
   }
 
   &__content {
-    padding: 14px 0;
+    padding: 4.9mm 0;
   }
 }
 
 .priority-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 22.6mm;
 }
 
 .priority-column {
   &__label {
     color: #444;
-    margin-bottom: 18px;
+    margin-bottom: 6.3mm;
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 5.6mm;
     font-weight: 500;
   }
 
@@ -53,7 +53,7 @@
     width: 70%;
     p {
     color: var(--c-main-text);
-    margin-bottom: 18px;
+    margin-bottom: 6.3mm;
   }}
 }
 
@@ -61,20 +61,20 @@
 .activities-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  border-top: 1px solid #eee;
-  padding-top: 30px;
+  gap: 10.6mm;
+  border-top: 0.4mm solid #eee;
+  padding-top: 10.6mm;
 }
 
 .activity-item {
   display: flex;
-  gap: 20px;
+  gap: 7.1mm;
   align-items: flex-start;
 
   &__badge {
     background-color: var(--c-red);
-    min-width: 50px;
-    height: 50px;
+    min-width: 17.6mm;
+    height: 17.6mm;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@
   }
 
   &__name {
-    margin: 0 0 10px 0;
+    margin: 0 0 3.5mm 0;
     color: var(--c-main-text);
   }
 

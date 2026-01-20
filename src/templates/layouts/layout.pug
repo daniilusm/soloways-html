@@ -2,7 +2,7 @@ include ../mixins/mixins
 
 doctype html
 
-html(lang="ru" class="notranslate" translate="no")
+html(lang="ru" translate="no")
 
 	head
 		meta(charset="utf-8")
@@ -39,24 +39,12 @@ html(lang="ru" class="notranslate" translate="no")
 				document.documentElement.classList.add('-fonts-ready')
 			}
 
-	body(data-scroll-lock-fix-shift)
+	body
 
-		//div.loader(data-loader): div ⏳Loading...
-
-		div.wrapper
-			//- include ../widgets/header
-
-			main.main
-				div.container
-					block main
-			// main
-
-			//- include ../widgets/footer
-		// wrapper
+		main.main
+			div.container
+				block main
 
 		block bottom
-
-		// JS
-		script(type="module" src="scripts/app.js")
 
 		block js

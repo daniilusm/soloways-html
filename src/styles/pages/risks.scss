@@ -2,42 +2,42 @@
 .risk-cards{
 	display: flex;
 	flex-direction: column;
-	gap: 25px;
+	gap: 8.8mm;
 }
 
 .risk{
 	&__card{
 		display: flex;
 		flex-direction: column;
-    	padding: 0px 16px;
+    	padding: 0.0mm 5.6mm;
 	}
 
 	&__header{
-		padding: 14px 12px 10px;
+		padding: 4.9mm 4.2mm 3.5mm;
 
 		background-color: var(--c-table);
-		border-radius: 6px;
-		margin-bottom: 6px;
+		border-radius: 2.1mm;
+		margin-bottom: 2.1mm;
 	}
 
 	&__badge{
 		background-color: var(--c-red);
 		color: var(--c-white);
-		padding: 5px 12px 4px;
-		border-radius: 6px;
-		margin-bottom: 25px;
+		padding: 1.8mm 4.2mm 1.4mm;
+		border-radius: 2.1mm;
+		margin-bottom: 8.8mm;
 
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-    	gap: 24px;
+    	gap: 8.5mm;
 	}
 
 
 	&-details {
     	display: grid;
     	grid-template-columns: repeat(3, 1fr);
-    	gap: 24px;
+    	gap: 8.5mm;
 
-    	padding: 0 12px;
+    	padding: 0 4.2mm;
 	}
 }

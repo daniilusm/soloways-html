@@ -1,5 +1,5 @@
 @mixin link() {
-	border-bottom: 1px solid currentcolor;
+	border-bottom: 0.4mm solid currentcolor;
 
 	&:hover {
 		border-bottom-color: transparent;
@@ -7,7 +7,7 @@
 }
 
 @mixin link-invert() {
-	border-bottom: 1px solid transparent;
+	border-bottom: 0.4mm solid transparent;
 
 	&:hover {
 		border-bottom-color: currentcolor;

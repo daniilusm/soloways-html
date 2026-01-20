@@ -1,5 +1,5 @@
 .generic-profile{    
-    padding: 0 9px;
+    padding: 0 3.2mm;
 }
 
 .genetic-table {
@@ -8,13 +8,13 @@
   width: 100%;
 
   &__section{
-    margin-bottom: 10px;
+    margin-bottom: 3.5mm;
 }
 
   &__header {
     display: grid;
-    grid-template-columns: 80px 104px 350px;
-    padding:12px 20px 7px;
+    grid-template-columns: 28.2mm 36.7mm 123.4mm;
+    padding:4.2mm 7.1mm 2.5mm;
   }
 
   &__head-cell {
@@ -22,15 +22,15 @@
   }
 
   &__section-title {
-    padding: 15px 20px;
-    margin: 10px 0;
-    border-radius: 8px;
+    padding: 5.3mm 7.1mm;
+    margin: 3.5mm 0;
+    border-radius: 2.8mm;
   }
 
   &__row {
     display: grid;
-    grid-template-columns: 80px 104px 350px;
-    padding: 13px 20px;
+    grid-template-columns: 28.2mm 36.7mm 123.4mm;
+    padding: 4.6mm 7.1mm;
     align-items: start;
   }
 

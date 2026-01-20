@@ -9,10 +9,10 @@
 	box-sizing: inherit;
 }
 
-html,
-body {
-	scrollbar-gutter: stable;
-}
+// html,
+// body {
+// 	scrollbar-gutter: stable;
+// }
 
 html {
 	box-sizing: border-box;
@@ -23,18 +23,18 @@ html {
 }
 
 body {
-	min-width: 360px;
-	margin: 0;
-	background: var(--color-white);
-	color: var(--base-text-color);
-	direction: ltr;
-	font-family: var(--base-font-family), system-ui;
-	font-size: var(--content-text-font-size);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	line-height: var(--base-text-line-height);
-	text-align: left;
-	text-rendering: optimizespeed;
+	// min-width: 127.0mm;
+	// margin: 0;
+	// background: var(--color-white);
+	// color: var(--base-text-color);
+	// direction: ltr;
+	// font-family: var(--base-font-family), system-ui;
+	// font-size: var(--content-text-font-size);
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+	// line-height: var(--base-text-line-height);
+	// text-align: left;
+	// text-rendering: optimizespeed;
 }
 
 ::selection {
@@ -207,7 +207,7 @@ address {
 
 abbr,
 acronym {
-	border-bottom: 1px dashed currentcolor;
+	border-bottom: 1.0mm dashed currentcolor;
 	cursor: help;
 }
 
@@ -225,7 +225,7 @@ img {
 
 hr {
 	display: block;
-	height: 1px;
+	height: 1.0mm;
 	padding: 0;
 	border: 0;
 	margin: var(--spacing-24) 0;
