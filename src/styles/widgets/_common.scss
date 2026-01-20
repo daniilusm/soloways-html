@@ -25,7 +25,9 @@ body {
 	position: relative;
 
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
 
 	height: 275px;
 	padding: 26px 20px;
@@ -65,6 +67,7 @@ body {
 
 		h1{
 			margin-bottom: 12px;
+			color: var(--c-heading-text);
 		}
 
 		p{
@@ -72,6 +75,34 @@ body {
 			color: var(--c-sutitle-text);
 		}
 	}
+
+	&__brand-tag {
+    	display: flex;
+    	align-items: center;
+		opacity: 0;
+		z-index: 1;
+		padding: 8px 16px;
+
+		color: var(--c-white);
+
+		border-radius: 100px;
+		margin-bottom: 16px;
+
+		svg	{
+			width: 9px;
+			height: 9px;
+		}
+
+		p {
+			margin: 0;
+			margin-left: 9px;
+    		white-space: break-spaces;
+		}
+	}
+}
+
+.viewBrandTag{
+	opacity: 1;
 }
 
 .pattern-img{
@@ -86,10 +117,11 @@ body {
     display: flex;
     align-items: center;
     gap: 9px;
-    padding: 13px 12px;
+    padding: 7px 12px;
     color: var(--c-white);
     border-radius: 6px;
     width: 531px;
+	min-height: 32px;
     margin: 24px auto 0;
 
     p{

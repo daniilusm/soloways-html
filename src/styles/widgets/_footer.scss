@@ -35,3 +35,9 @@
         transform: translateY(-50%);
     }
 }
+
+.colorBg {
+    p {
+        background-color: var(--c-background);
+    }
+}

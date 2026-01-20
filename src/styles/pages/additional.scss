@@ -1,9 +1,6 @@
-
-
-
-      .tag {
-        border: 1px solid var(--c-brand);
-        padding: 6px 13px;
+.tag {
+        border: 0.6px solid var(--c-brand);
+        padding: 6px 13px 5px;
         border-radius: 20px;
         color: var(--c-brand);
         background-color: var(--c-table);    
@@ -64,6 +61,10 @@
     //   padding: 18px 20px;
       border-radius: 8px;
 
+      a{
+        text-decoration: underline;
+      }
+
       a,span {
         padding: 11px 14px;
 
@@ -84,9 +85,10 @@
 		}
       }
 
-      .name {
-        color: var(--c-brand);
-      }
+    
+    a {
+      color: var(--c-brand);
+    }
 
       .name a {
         text-underline-offset: 3px;
@@ -119,4 +121,5 @@
     .result{
       white-space: initial !important;
     }
+
   }
