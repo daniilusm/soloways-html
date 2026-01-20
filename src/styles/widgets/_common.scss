@@ -23,6 +23,7 @@ body {
 	max-height: 297.0mm;
 	width: 210mm;
 	margin: 0 auto;
+	overflow: hidden;
 
     box-shadow: 0.0mm 0.0mm 80.0mm #cccccc;
 
@@ -82,6 +83,13 @@ body {
 			width: 129.4mm;
 			color: var(--c-sutitle-text);
 		}
+	}
+
+	&__tag{
+		position: absolute;
+		top: 4.3mm;
+		right: 4.3mm;
+		opacity: 0;
 	}
 
 	&__brand-tag {

@@ -4,6 +4,7 @@ extends templates/layouts/layout
 block css
 	link(rel="stylesheet" href="styles/pages/info-table.scss")
 	link(rel="stylesheet" href="styles/pages/dynamic-row.scss")
+	link(rel="stylesheet" href="styles/pages/additional.scss")
 
 
 block main
@@ -13,7 +14,9 @@ block main
 	- 
 		const heroData = {
 			title: 'анализ лабораторных данных',
-			imgUrl:"../images/star-24.webp"
+			imgUrl:"../images/star-24.webp",
+			tagText:'Приложение 02',
+			tagClass:'viewBrandTag'
 		}
 
 	+hero(heroData)

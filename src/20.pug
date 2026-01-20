@@ -3,6 +3,7 @@ extends templates/layouts/layout
 
 block css
 	link(rel="stylesheet" href="styles/pages/database-table.scss")
+	link(rel="stylesheet" href="styles/pages/additional.scss")
 
 
 block main
@@ -13,7 +14,9 @@ block main
 		const heroData = {
 			title: 'справочный раздел',
 			text:'Здесь лежат все исходные данные: ваша анкета, результаты анализов и генетическая информация. Можете заглянуть сюда, если захотите освежить в памяти, на основе чего мы строили рекомендации.',
-			imgUrl:"../images/star-20.webp"
+			imgUrl:"../images/star-20.webp",
+			tagText:'Приложение 01',
+			tagClass:'viewBrandTag'
 		}
 
 	+hero(heroData)

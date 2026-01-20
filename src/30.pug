@@ -4,6 +4,7 @@ extends templates/layouts/layout
 block css
 	link(rel="stylesheet" href="styles/pages/info-table.scss")
 	link(rel="stylesheet" href="styles/pages/genetic-row.scss")
+	link(rel="stylesheet" href="styles/pages/additional.scss")
 
 
 block main
@@ -14,6 +15,8 @@ block main
 		const heroData = {
 			title: 'анализ генов',
 			imgUrl:"../images/star-30.webp"
+			tagText:'Приложение 02',
+			tagClass:'viewBrandTag'
 		}
 
 	+hero(heroData)
