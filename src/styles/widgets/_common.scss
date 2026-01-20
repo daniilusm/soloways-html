@@ -3,6 +3,7 @@ body {
 	height: 100%;
 }
 
+
 .wrapper {
 	// padding: 32px 0;
 	    scale: 1.51;
@@ -193,4 +194,15 @@ body {
 		margin: 0;
 	}
 
+}
+
+@media print {
+	@page { 
+		size: A4; margin: 1in;
+	};
+
+	* {
+    	-webkit-print-color-adjust: exact !important; // Для Chrome, Safari, Edge
+    	print-color-adjust: exact !important;         // Стандарт
+  	}
 }
