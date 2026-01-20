@@ -2,6 +2,9 @@
 	position: relative;
 	min-height: 297.0mm;
 	max-height: 297.0mm;
+	
+	display: flex;
+    flex-direction: column;
 
     padding: 11.3mm 4.9mm 7.8mm;
 }
