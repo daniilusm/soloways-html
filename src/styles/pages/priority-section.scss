@@ -12,8 +12,9 @@
   }
 
   &__icon {
-    background: #fff;
+    background: var(--c-white);
     color: var(--c-red);
+    padding-top: 1mm;
     font-size: 4.6mm;
     font-family: var(--font-secondary);
     width: 6.3mm;
@@ -51,10 +52,19 @@
 
   &__items {
     width: 70%;
+
     p {
-    color: var(--c-main-text);
-    margin-bottom: 6.3mm;
-  }}
+      color: var(--c-main-text);
+      margin-bottom: 6.3mm;
+      margin-top: 0;
+
+
+  &:first-child {
+    padding-bottom: 6.1mm;
+    border-bottom: 0.4mm solid var(--c-separator);
+  }
+    }
+  }
 }
 
 // Блок активностей

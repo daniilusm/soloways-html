@@ -11,7 +11,7 @@
   overflow: hidden;
 
   &__content {
-    padding: 0 3.2mm;
+    // padding: 0 4.9mm;
   }
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5mm 3.5mm;
+    padding: 3.5mm 5.5mm;
     border-bottom: 0.4mm solid var(--c-separator); // Тонкий разделитель между строками
 
     &:last-child {
@@ -43,7 +43,7 @@
   &__source {
     white-space: pre;
 
-    color: var(--c-main-text);
+    color: var(--c-brand);
     text-align: right;
   }
 }

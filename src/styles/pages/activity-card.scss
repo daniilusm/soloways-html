@@ -26,8 +26,11 @@ $radius: 4.2mm;
   display: flex;
   align-items: flex-start;
   gap: 4.2mm;
-  padding-bottom: 7.1mm;
-  border-bottom: 0.4mm solid var(--c-separator); 
+
+  &:first-child, &:nth-child(2){
+    padding-bottom: 7.1mm;
+    border-bottom: 0.4mm solid var(--c-separator);
+  }
 
   &__number {
     min-width: 11.3mm;
