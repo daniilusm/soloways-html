@@ -20,6 +20,7 @@ html {
 	scroll-behavior: smooth;
 	text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	color: var(--c-main-text);
 }
 
 body {
@@ -213,7 +214,7 @@ acronym {
 
 mark {
 	background: #ff0;
-	color: #000;
+	color: #494949;
 }
 
 img {

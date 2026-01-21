@@ -201,7 +201,7 @@ html(lang="en")
 			}
 
 			a:visited {
-				color: #333;
+				color: #494949;
 			}
 
 			a:hover {
@@ -241,7 +241,7 @@ function generateTwigTemplate(templates) {
 			}
 
 			a:visited {
-				color: #333;
+				color: #494949;
 			}
 
 			a:hover {
