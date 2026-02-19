@@ -1,0 +1,8 @@
+mixin psycho-row(gene, rs, desc, status)
+  - const statusClass = status === 'изменён' ? 'modified' : 'normal'
+  .psycho-analysis__row
+    .psycho-analysis__cell.psycho-analysis__cell--gene.typo-th= gene
+    .psycho-analysis__cell.psycho-analysis__cell--rs.typo-tv= `(${rs})`
+    .psycho-analysis__cell.psycho-analysis__cell--desc.typo-tv= desc
+    .psycho-analysis__cell.psycho-analysis__cell--status.typo-tv
+      span(class=`psycho-analysis__badge psycho-analysis__badge--${statusClass}`)= status

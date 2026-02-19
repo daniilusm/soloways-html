@@ -10,6 +10,7 @@
 .additional-block {
   position: relative;    
   padding: 0 5.6mm;
+}
 
   .block-header {
     display: flex;
@@ -18,7 +19,7 @@
     margin-bottom: 3.9mm;
 
     h2 {
-		display: inline-flex;
+		  display: inline-flex;
     	align-items: center;
 
       &::before {
@@ -100,7 +101,7 @@
       }
     }
   }
-}
+
 
 
   .two-col{

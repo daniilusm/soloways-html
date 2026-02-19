@@ -1,0 +1,83 @@
+@use '../mixins' as *;
+
+
+.psycho-state {
+  margin: tomm(22) tomm(24) 0;
+
+  &__header {
+    background-color: var(--c-table);
+    padding: tomm(18) tomm(15);
+    border-radius: tomm(8) tomm(8) 0 0;
+    margin-bottom: tomm(12);
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__symptoms {
+    display: grid;
+    grid-template-columns: tomm(268) tomm(268);
+    margin: 0 tomm(16);
+    gap: tomm(93);
+  }
+
+  &__symptom-column {
+    p {
+      margin: tomm(5) 0 tomm(28);
+      padding-bottom: tomm(24);
+
+      &:first-child{
+        border-bottom: 1px solid var(--c-separator);
+        }
+    }
+  }
+}
+
+.psycho-analysis {
+
+  &__title {
+    color: #444444;
+    margin: 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    margin: tomm(36) 0 0;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: tomm(107) tomm(110) tomm(340) tomm(125);
+    align-items: center;
+    padding: tomm(12) tomm(16);
+    border-radius: tomm(6);
+
+    &:nth-child(even) {
+      background-color: var(--c-secondary);
+    }
+  }
+
+  &__cell {
+
+    &--status { text-align: right; }
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: tomm(4) tomm(15);
+    border-radius: tomm(6);
+    min-width: tomm(90);
+    text-align: center;
+    color: var(--c-white);
+
+    &--modified {
+      background-color: var(--c-blue); // Голубой для "изменён"
+    }
+
+    &--normal {
+      background-color: var(--c-green); // Зеленый для "норма"
+    }
+  }
+}

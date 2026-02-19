@@ -63,8 +63,9 @@
 
 	}
 
-	&__left{
-		width: 111.1mm;
+	&__left{    
+		text-align: center;
+		width: 100%;
 
 		h4{
 			font-family: var(--font-primary);

@@ -2,16 +2,18 @@
 extends templates/layouts/layout
 
 block css
-	link(rel="stylesheet" href="styles/pages/risks.scss")
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/psycho-a.scss")
 
 
 block main
 	include templates/widgets/hero
+	include templates/mixins/psycho-row
 
 	- 
 		const heroData = {
-			title: 'анализ рисков заболеваний',
-			text:'Самый важный раздел отчёта — обязательно прочитайте его внимательно. Здесь мы показываем, какие направления вашего здоровья требуют поддержки прямо сейчас, исходя из вашей генетики, анализов крови и образа жизни. Это поможет вам понять, на что обратить внимание в первую очередь.',
+			title: 'депрессия',
+			text:'Генетические особенности обмена серотонина и дофамина — нейромедиаторов, отвечающих за настроение и мотивацию, — влияют на эмоциональную устойчивость и способность получать удовольствие от жизни',
 			imgUrl:"../images/star-01.webp"
 		}
 
