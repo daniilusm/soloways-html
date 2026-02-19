@@ -1,0 +1,66 @@
+@use '../mixins' as *;
+
+.genetic-impact {
+    padding: 0 tomm(20);
+
+  &__title {
+    margin: 0;
+  }
+
+  &__scale-container {
+    margin: tomm(18) 0 tomm(46);
+  }
+
+  &__content{
+    margin-bottom: tomm(42);
+  }
+
+  &__scale {
+    display: flex;
+    gap: tomm(8);
+    margin-bottom: tomm(15);
+  }
+
+  &__scale-segment {
+    height: tomm(12);
+    flex: 1;
+    background-color: var(--c-cover);
+    border-radius: tomm(4);
+
+    &--active {
+        
+        &-yellow{
+            background-color: var(--c-yellow); 
+        }
+        
+        &-red{
+            background-color: var(--c-red); 
+        }
+        
+        &-green{
+            background-color: var(--c-green); 
+        }
+    }
+  }
+
+  &__scale-label {
+    margin: 0;
+  }
+
+  &__subheader {
+    margin: 0;
+  }
+
+  &__explanation-row {
+    display: grid;
+    grid-template-columns: tomm(160) 1fr;
+    gap: 40px;
+    padding: tomm(41) tomm(16);
+    align-items: center;
+    border-radius: tomm(6);
+
+    &--highlighted {
+      background-color: var(--c-table); // Светлая плашка как в макете
+    }
+  }
+}

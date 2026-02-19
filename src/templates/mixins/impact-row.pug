@@ -1,0 +1,4 @@
+mixin impact-row(title, text, isHighlighted = false)
+  .genetic-impact__explanation-row(class=isHighlighted ? 'genetic-impact__explanation-row--highlighted' : '')
+    .typo-th= title
+    .typo-tv= text

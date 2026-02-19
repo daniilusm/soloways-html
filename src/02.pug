@@ -2,9 +2,11 @@
 extends templates/layouts/layout
 
 block css
-	link(rel="stylesheet" href="styles/pages/risks.scss")
+	link(rel="stylesheet" href="styles/pages/genetic-impact.scss")
+	link(rel="stylesheet" href="styles/pages/additional.scss")
 
 block main
+	include templates/mixins/impact-row
 
 	include templates/pages/02
 
