@@ -2,15 +2,12 @@
 extends templates/layouts/layout
 
 block css
-	link(rel="stylesheet" href="styles/pages/profile-card.scss")
 	link(rel="stylesheet" href="styles/pages/info-table.scss")
-	link(rel="stylesheet" href="styles/pages/habits.scss")
-
+	link(rel="stylesheet" href="styles/pages/priority-section.scss")
+	link(rel="stylesheet" href="styles/pages/food-card.scss")
 
 block main
-	include templates/widgets/hero
-	include templates/mixins/profile-card
-	include templates/mixins/habit
+	include templates/mixins/food-card
 
 	include templates/pages/21
 

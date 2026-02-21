@@ -45,3 +45,16 @@
     color: var(--c-main-text);
   }
 }
+
+.life-recommendations{
+    padding: 4.8mm 6.0mm;
+
+  .diet-recommendations__grid{
+      column-gap: 5.9mm;
+    row-gap: 10.3mm;
+  }
+
+  .food-card {
+    align-items: start;
+  }
+}
