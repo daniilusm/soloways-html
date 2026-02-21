@@ -1,3 +1,5 @@
+@use '../mixins' as *;
+
 .tag {
         border: 0.2mm solid var(--c-brand);
         padding: 2.1mm 4.6mm 1.8mm;
@@ -40,6 +42,11 @@
       display: flex;
       gap: 3.5mm;
     }
+  }
+
+  .small-header{
+    width: tomm(430);
+    margin-top: tomm(20);
   }
 
   .block-description {
@@ -124,3 +131,150 @@
     }
 
   }
+
+.recomendation-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: tomm(16) tomm(84);
+  margin: tomm(20) 0 tomm(40);
+}
+
+.recomendation-item{
+  p{
+    margin: 0;
+    padding: tomm(18) tomm(16);
+
+    &:first-child{
+    background-color: var(--c-table);
+  }
+  }
+}
+
+.recomendation-list{
+  display: flex;
+  flex-direction: column;
+  gap: tomm(19);
+  margin-top: tomm(20);
+
+  &__item{
+    &-top{
+      display: grid;
+      align-items: center;
+      grid-template-columns: tomm(266) tomm(181) tomm(230);
+      background-color: var(--c-table);
+      padding: tomm(12) tomm(16);
+
+      p{
+        margin: 0;
+      }
+    }
+
+    &-text{
+      padding: tomm(20) tomm(16);
+      margin: 0;
+
+      p{
+        margin: 0;
+      }
+    }
+
+    &-columns{
+      display: grid; 
+      grid-template-columns: tomm(264) 1fr;
+      align-items: center;
+
+      p{
+        padding: tomm(20) tomm(16);
+        margin: 0;
+      }
+    }
+
+    &-names{
+      display: grid; 
+      grid-template-columns: tomm(264) 1fr;
+      padding: 0 tomm(16);
+      margin: tomm(44) 0 tomm(-10);
+
+      p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.pils{
+
+  display: flex;
+  align-items: center;
+  gap: tomm(8);
+
+  &-icon{
+    height: tomm(22);
+    width: tomm(22);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-pils{ background-image: url('../../images/icons/pils.svg');}
+    &-cal{ background-image: url('../../images/icons/calendar.svg');}
+  }
+
+  &-value{
+
+  }
+}
+
+.without-gap{
+  gap: 0;
+}
+
+.section-container{
+  padding: 0 tomm(24);
+
+  .genetic-impact__scale-container{
+    margin: tomm(30) 0 tomm(40);
+  }
+}
+
+.texts{
+  margin-top: tomm(27);
+
+  p{
+    margin: 0 0 tomm(20);
+  }
+}
+
+.margin-t{
+    margin-top: tomm(32);
+}
+
+.analis-list{
+  margin-top: tomm(35);
+
+  &_titles, &_item{
+    display: grid;
+    grid-template-columns: tomm(215) 1fr;
+    align-items: center;
+  }
+
+  &_titles{
+      background-color: var(--c-secondary);
+
+    p{
+      margin: 0;
+      padding: tomm(10) tomm(16);
+    }
+  }
+
+  &_item{
+    p{
+      margin: 0;
+      padding: tomm(23) tomm(16);
+    }
+
+    &:nth-child(odd){
+      background-color: var(--c-secondary);
+    }
+  }
+}

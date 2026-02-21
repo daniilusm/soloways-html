@@ -1,35 +1,65 @@
 section.additional-block
   div.block-header
     .title-group
-      h2.typo-h2 Обязательный блок
-    .filter-tags
-      span.tag.typo-td каждый день
-      span.tag.typo-td месяц 4-6
+      h2.typo-h2 Рекомендации по образу жизни
+  .recomendation-grid
+    .recomendation-item 
+      p.recomendation-title.typo-th Установите «якорное утро»
+      p.typo-tv 10–15 минут дневного света в первые 60 минут после пробуждения (даже в пасмурную погоду), 5 дней в неделю.
 
-  p.block-description.typo-tv Это ваш приоритет номер один. Эти добавки помогут закрыть риски для здоровья, которые мы обнаружили в анализе ваших данных. Начните именно с них — и пропейте полный курс 3 месяца. 
+    .recomendation-item 
+      p.recomendation-title.typo-th Планируйте 1 «обязательную радость» в день
+      p.typo-tv 20–30 минут занятия, которое даёт удовольствие (прогулка, музыка, хобби) — ставьте в календарь как встречу.
 
-  .supplements-table
-    //- Шапка таблицы
-    .table-row.header.typo-th
-      span Период
-      span БАД
-      span Доза
-      span Краткое обоснование
+    .recomendation-item 
+      p.recomendation-title.typo-th Снизьте кофеин до 1–2 порций и только до 14:00
+      p.typo-tv Замените третью чашку на воду/ травяной чай 5 дней в неделю.
 
-    //- Данные таблицы
-    -
-      const supplements = [
-        { period: 'во время завтрака', name: 'Diosmin + Hesperidin', dose: '1 таблетка (900 мг/100 мг)', desc: 'Уменьшает симптомы варикоза и отёки ног' },
-        { period: 'во время завтрака', name: 'B-complex Extra', dose: '1 капсула', desc: 'Активные витамины группы В поддерживают энергию и метилирование' },
-        { period: 'во время завтрака', name: 'Biotin', dose: '1 капсула (10 мг)', desc: 'Укрепляет волосы и ногти' },
-        { period: 'за 30 мин до ужина', name: 'Extra Berberin', dose: '2 капсулы (1000 мг)', desc: 'Помогает снизить холестерин и сахар крови' },
-        { period: 'во время ужина', name: 'PreBio Complex', dose: '1 капсула', desc: 'Питает полезные бактерии и уменьшает вздутие' },
-        { period: 'за 30 мин до сна', name: 'Synbiotic', dose: '1 капсула (≥10¹⁰ КОЕ)', desc: 'Пополняет микробиоту для лучшего пищеварения' }
-      ]
+    .recomendation-item 
+      p.recomendation-title.typo-th Делайте «выход из дня»
+      p.typo-tv За 60 минут до сна приглушите свет, уберите экраны и добавьте 10 минут спокойного чтения или тёплого душа ежедневно.
 
-    each item in supplements
-      .table-row.typo-tv
-        span.period= item.period
-        a.name(href="#")= item.name
-        span.dose= item.dose
-        span.desc= item.desc
+section.additional-block
+  div.block-header
+    .title-group
+      h2.typo-h2 Рекомендованные добавки
+  .recomendation-list
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Комплекс Б-ТМГ
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 2 капсулы 
+            p.typo-tl утром
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      p.recomendation-list__item-text.typo-tv Из-за наследственных особенностей превращения фолатов организму сложнее поддерживать «сырьё» для ровного настроения. Эта комбинация активных форм витаминов группы B помогает закрыть именно «узкое место» и обычно даёт больше устойчивости и ясности в течение дня.
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Витамин D3
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 2 капсулы 
+            p.typo-tl утром
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      p.recomendation-list__item-text.typo-tv Ваша нервная система генетически более чувствительна к колебаниям серотониновой регуляции, поэтому поддержка витамином D часто заметно улучшает стабильность настроения и общий тонус, особенно в периоды усталости.
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Магний глицинат
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 2 капсулы 
+            p.typo-tl утром
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      p.recomendation-list__item-text.typo-tv Учитывая генетическую чувствительность к серотониновому «дисбалансу», магний помогает нервной системе легче переключаться в режим восстановления. Это может уменьшить внутреннее напряжение и улучшить качество засыпания.

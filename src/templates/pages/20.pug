@@ -1,27 +1,88 @@
-section.database-container
-  .database-card
-    div.gray-label
-      h2.gray-label__title.typo-as Базы данных
-    
-    .database-card__content.database-list
-      +database-row('888 000 ассоциаций по 7 273 исследованиям (релиз: май 2025)', 'GWAS Catalog')
-      +database-row('220 000 метаболитов, справочные уровни и биохимические пути (KEGG)', 'HMDB v5.0')
-      +database-row('49 000 липидов, классификация и маркёры воспаления', 'LipidMAPS')
-      +database-row('Допустимые верхние уровни (29 нутриентов, версия 2023)', 'EFSA UL')
-      +database-row('Доказательная база RCT и метаанализов', 'PubMed / Cochrane / Epistemonikos')
+section.additional-block
+  div.block-header
+    .title-group
+      h2.typo-h2 Ключевые добавки
+  .recomendation-list__item-names
+    p.typo-tt Тема
+    p.typo-tt Для чего именно вам
 
-section.tw_bottom
-  div.gray-label
-    h2.gray-label__title.typo-tv GenAIS использует эти источники для расчёта рисков, подбора дозировок и интерпретации анализов.
+  .recomendation-list.without-gap
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Магний глицинат
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 2 капсулы 
+            p.typo-tl вечером
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      .recomendation-list__item-columns
+        p.typo-tv Тревожность,<br> Склонность к зависимостям, Стрессоустойчивость Выгорание
+        p.typo-tv Учитывая генетически более длительное удержание реакции на стресс, эта форма магния помогает быстрее переходить в восстановление. Практически это снижает прокручивание мыслей, уменьшает вечернее напряжение и снижает потребность «успокаиваться» быстрыми стимулами.
 
-  .tw_bottom__content
-    svg(width="9" height="54" viewBox="0 0 9 54" fill="none" xmlns="http://www.w3.org/2000/svg")
-      path(
-        d="M7.89905 46.0651V53.1393H0.379517V46.0651H7.89905ZM7.52795 0.379517V22.2428L7.52698 22.2574L6.11487 40.3834L6.08752 40.733H2.18909L2.1637 40.3815L0.826782 22.2555L0.825806 22.2418V0.379517H7.52795Z" 
-        stroke="#6B6B6B" 
-        stroke-opacity="0.6" 
-        stroke-width="0.759416"
-      )
-    .tw_bottom__texts.typo-tv
-      p= 'Предоставление информации о генотипе, полученной на основе вашего генетического материала, не является медицинской услугой.'
-      p= 'Содержащиеся в аналитике данные о состоянии здоровья не являются диагнозом.'
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Инозитол
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 2 капсулы 
+            p.typo-tl вечером
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      .recomendation-list__item-columns
+        p.typo-tv Тревожность, <br>Склонность к зависимостям
+        p.typo-tv При наследственной чувствительности к тревожным сигналам и тяге к «быстрой награде» инозитол помогает выровнять внутренний фон. Это облегчает контроль импульсов и снижает вечернюю тревожность.
+
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Омега-3
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 2 капсулы 
+            p.typo-tl во время еды
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      .recomendation-list__item-columns
+        p.typo-tv СДВГ (дефицит внимания и гиперактивность), <br>Склонность к зависимостям,<br>Стрессоустойчивость,<br>Выгорание
+        p.typo-tv Ваша нервная система генетически более чувствительна к перегрузке и стимуляции, поэтому ей нужна дополнительная «защита ресурса». Омега-3 поддерживает устойчивость, помогает дольше держать фокус и снижает потребность подстёгивать себя стимуляторами.
+
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Ноустресс
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 1 капсула
+            p.typo-tl утром
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      .recomendation-list__item-columns
+        p.typo-tv Стрессоустойчивость, <br>Выгорание
+        p.typo-tv Учитывая наследственно более медленное восстановление после напряжения, эта поддержка помогает переносить нагрузку ровнее. Эффект обычно проявляется как меньшее чувство перегруза и более стабильная работоспособность в течение дня.
+
+    .recomendation-list__item
+      .recomendation-list__item-top
+        p.typo-ath Витамин D3
+        .pils
+          .pils-icon.pils-icon-pils
+          .pils-value
+            p.typo-tv 1 капсула
+            p.typo-tl утром
+        .pils
+          .pils-icon.pils-icon-cal
+          .pils-value
+            p.typo-tv 8 недель
+      .recomendation-list__item-columns
+        p.typo-tv Тревожность
+        p.typo-tv При генетически более чувствительной эмоциональной регуляции витамин D помогает удерживать более устойчивый «фоновый» уровень ресурса. Это снижает вероятность тревожной перегрузки на фоне усталости и помогает мягче реагировать на стресс.

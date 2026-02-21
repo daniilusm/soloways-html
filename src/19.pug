@@ -3,10 +3,19 @@ extends templates/layouts/layout
 
 block css
 	link(rel="stylesheet" href="styles/pages/additional.scss")
-	link(rel="stylesheet" href="styles/pages/checklist-page.scss")
+	link(rel="stylesheet" href="styles/pages/genetic-impact.scss")
 
 block main
-	include templates/mixins/checklist-row
+	include templates/widgets/hero
+	include templates/mixins/dynamic-row
+
+	- 
+		const heroData = {
+			title: 'общий вывод',
+			imgUrl:"../images/star-24.webp",
+		}
+
+	+hero(heroData)
 
 	include templates/pages/19
 

@@ -1,23 +1,30 @@
-section.page-container
-  article.checklist
-    div.checklist__header
-      span.checklist__badge.tag.typo-td Чек-лист
-      h1.checklist__title.typo-h1 краткий опросник для самоконтроля
-      p.checklist__subtitle.typo-st Заполнить перед следующим визитом
+section.section-container
+  div.block-header.small-header
+      .title-group
+        h2.typo-h2 Ваш главный паттерн: Высокая чувствительность — долгое восстановление
+  .texts.typo-tv
+    p Ваша нервная система генетически сильнее реагирует на стрессовые стимулы и дольше удерживает напряжение, поэтому внутреннее беспокойство и перегруз накапливаются быстрее. Это связывает тревожность и стрессоустойчивость: реакции запускаются легче, а возвращение к спокойствию требует больше времени и более чётких ритуалов восстановления.
+    p На этом фоне склонность к зависимостям становится вторичным эффектом — мозг чаще ищет быстрые способы «снять напряжение» через приятные стимулы.
+    p Остальные темы проявляются мягче и обычно усиливаются именно тогда, когда вы недоспали или перегружены.
 
-    .checklist__content
-      .checklist__table-head.typo-th
-        span.checklist__label Параметр
-        span.checklist__label Ваша оценка (0-10)
 
-      .checklist__list
-        +checklist-row('Уровень энергии утром')
-        +checklist-row('Отёчность ног вечером')
-        +checklist-row('Качество сна (непрерывность)')
-        +checklist-row('Частота головных болей')
-        +checklist-row('Тяга к сладкому')
-        +checklist-row('Интенсивность выпадения волос')
-        +checklist-row('Настроение и тревожность')
-        +checklist-row('Соблюдение питьевого режима')
-        +checklist-row('Частота выполнения венозной гимнастики')
-        +checklist-row('Общее удовлетворение самочувствием')
+section.section-container.margin-t
+  div.block-header
+    .title-group
+      h2.typo-h2 Ключевые цифры
+
+  .genetic-impact__scale-container
+    .genetic-impact__scale
+      each val in [1, 2, 3, 4, 5, 6, 7, 8]
+        .genetic-impact__scale-segment.genetic-impact__scale-segment--active-red
+      each val in [1, 2]
+        .genetic-impact__scale-segment
+    p.genetic-impact__scale-label.typo-tv Тревожность
+
+  .genetic-impact__scale-container
+    .genetic-impact__scale
+      each val in [1, 2, 3, 4, 5, 6, 7]
+        .genetic-impact__scale-segment.genetic-impact__scale-segment--active-red
+      each val in [1, 2, 3]
+        .genetic-impact__scale-segment
+    p.genetic-impact__scale-label.typo-tv Стрессоустойчивость и выгорание  
