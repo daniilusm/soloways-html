@@ -1,0 +1,12 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+
+block main
+
+	include templates/pages/15
+
+	- const pageCount = "15"
+	include templates/widgets/footer

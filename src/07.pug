@@ -1,0 +1,26 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/psycho-a.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/psycho-row
+
+	- 
+		const heroData = {
+			title: 'СДВГ',
+			subtitle:'(дефицит внимания и гиперактивность)',
+			text:'Генетические особенности дофаминовой системы влияют на способность удерживать внимание, контролировать импульсы и доводить дела до конца, что напрямую отражается на продуктивности и организации жизни.',
+			imgUrl:"../images/7.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/07
+
+	- const pageCount = "7"
+	include templates/widgets/footer

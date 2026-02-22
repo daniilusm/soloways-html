@@ -1,0 +1,29 @@
+section.genetic-impact
+
+  div.block-header
+      .title-group
+        h2.typo-h2 Вероятность влияния вашей генетики на ежедневное самочувствие
+  
+  .genetic-impact__scale-container
+    .genetic-impact__scale
+      each val in [1, 2, 3, 4, 5, 6, 7, 8]
+        .genetic-impact__scale-segment.genetic-impact__scale-segment--active-red
+      each val in [1, 2]
+        .genetic-impact__scale-segment
+    p.genetic-impact__scale-label.typo-tv Умеренное влияние
+
+  .genetic-impact__content
+    div.block-header
+      .title-group
+        h2.typo-h2 Что это значит?
+    
+    .genetic-impact__explanation-list
+      +impact-row('SLC6A4 и HTR2A', 'Ваши варианты SLC6A4 и HTR2A делают серотониновую систему более чувствительной: настроение легче «проседает» и сложнее стабилизируется после эмоциональной нагрузки.', true)
+      
+      +impact-row('MTHFR', 'Изменение MTHFR означает, что организму может быть труднее поддерживать ровное производство «нейромедиаторов мотивации», поэтому в некоторые периоды продуктивность и интерес к делам снижаются заметнее.')
+      
+      +impact-row('Подавленое настроение и эмоциональные колебания', 'По опроснику вы отмечаете несколько дней в месяц с подавленным настроением — это хорошо укладывается в такую генетическую картину. Если параллельно есть дефициты по витаминам группы B или витамину D, это обычно усиливает эмоциональные колебания.', true)
+
+.pattern-image-wrapper
+  img.pattern-img(src="../images/pattern.webp" alt='pattern')
+  

@@ -1,0 +1,25 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/psycho-a.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/psycho-row
+
+	- 
+		const heroData = {
+			title: 'склонность к зависимостям',
+			text:'Генетические особенности системы вознаграждения влияют на силу тяги к повторению приятного опыта и способность вовремя остановиться, что проявляется как в химических, так и в поведенческих зависимостях.',
+			imgUrl:"../images/13.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/13
+
+	- const pageCount = "13"
+	include templates/widgets/footer

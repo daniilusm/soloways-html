@@ -1,0 +1,24 @@
+section.psycho-state
+  header.psycho-state__header
+    h2.psycho-state__title.typo-ath Как это может проявляться
+  
+  .psycho-state__symptoms
+    .psycho-state__symptom-column
+      p.typo-tv Периодическое снижение настроения без видимой причины
+      p.typo-tv Склонность застревать в негативных мыслях
+    .psycho-state__symptom-column
+      p.typo-tv Потеря интереса к занятиям, которые раньше радовали
+      p.typo-tv Снижение продуктивности в периоды упадка сил
+
+  .psycho-analysis
+    div.block-header
+        .title-group
+          h2.typo-h2 Генетический профиль
+
+    
+    .psycho-analysis__body
+      +psycho-row('SLC6A4', 'rs25531', 'Уровень серотонина, базовое настроение', 'изменён')
+      +psycho-row('HTR2A', 'rs6313', 'Чувствительность к серотонину, глубина спадов', 'изменён')
+      +psycho-row('BDNF', 'rs6265', 'Способность выходить из депрессии', 'норма')
+      +psycho-row('MTHFR', 'rs1801133', 'Производство серотонина и дофамина', 'изменён')
+      +psycho-row('IL6', 'rs1800795', 'Воспаление, усиливающее депрессию', 'норма')

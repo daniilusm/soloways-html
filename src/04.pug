@@ -1,0 +1,25 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/psycho-a.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/psycho-row
+
+	- 
+		const heroData = {
+			title: 'тревожность',
+			text:'Генетическая предрасположенность определяет чувствительность нервной системы к стрессу и неопределённости, влияя на то, насколько легко возникает внутреннее напряжение и как долго оно сохраняется.',
+			imgUrl:"../images/4.webp",
+		}
+
+	+hero(heroData)
+
+	include templates/pages/04
+
+	- const pageCount = "4"
+	include templates/widgets/footer

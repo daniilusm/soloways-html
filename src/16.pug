@@ -1,0 +1,25 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/psycho-a.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/psycho-row
+
+	- 
+		const heroData = {
+			title: 'стрессоустойчивость и выгорание',
+			text:'Генетическая устойчивость к стрессу определяет скорость восстановления нервной системы после напряжения и способность сохранять ясность мышления в условиях давления и высокого темпа жизни.',
+			imgUrl:"../images/16.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/16
+
+	- const pageCount = "16"
+	include templates/widgets/footer

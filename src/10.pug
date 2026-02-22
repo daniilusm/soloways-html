@@ -1,0 +1,26 @@
+
+extends templates/layouts/layout
+
+block css
+	link(rel="stylesheet" href="styles/pages/additional.scss")
+	link(rel="stylesheet" href="styles/pages/psycho-a.scss")
+
+
+block main
+	include templates/widgets/hero
+	include templates/mixins/psycho-row
+
+	- 
+		const heroData = {
+			title: 'когнитивные способности',
+			subtitle:'(память, концентрация)',
+			text:'Генетическая предрасположенность определяет скорость возрастных изменений в работе памяти, внимания и мышления, что влияет на способность усваивать новое и сохранять интеллектуальную активность с годами.',
+			imgUrl:"../images/10.webp"
+		}
+
+	+hero(heroData)
+
+	include templates/pages/10
+
+	- const pageCount = "10"
+	include templates/widgets/footer
