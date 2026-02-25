@@ -75,12 +75,12 @@
 
 .info-card{
     display: flex;
-    padding: tomm(47) tomm(24) tomm(32) tomm(42);
+    padding: tomm(43) tomm(24) tomm(32) tomm(42);
     background-color: var(--c-secondary);
     border-radius: tomm(6);
 
     img{
-        width: tomm(62);
+        width: tomm(66);
         height: tomm(66);
     }
 
@@ -99,11 +99,12 @@
         justify-content: space-between;
 
         h2{
-            margin-bottom: tomm(12);
+            margin-bottom: tomm(16);
         }
 
         p{
             margin: 0;
+            color: var(--c-heading-text);
         }
     }
 }

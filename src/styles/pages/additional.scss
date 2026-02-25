@@ -259,7 +259,8 @@
   }
 
   &_titles{
-      background-color: var(--c-secondary);
+    border-radius: tomm(6);
+    background-color: var(--c-secondary);
 
     p{
       margin: 0;
@@ -268,6 +269,7 @@
   }
 
   &_item{
+    border-radius: tomm(6);
     p{
       margin: 0;
       padding: tomm(23) tomm(16);

@@ -110,8 +110,8 @@ $fontName: 'LTSuperior';
 
     &-tv{
         font-family: var(--font-secondary);
-        font-size: 4mm;
-        line-height: 110%;
+        font-size: 4.1mm;
+        line-height: 125%;
         font-weight: 500;
     }
 
@@ -178,8 +178,8 @@ $fontName: 'LTSuperior';
     &-ath{
         font-family: var(--font-secondary);
         font-size: 5.25mm;
+        letter-spacing: 0.01em;
         line-height: 60%;
-        letter-spacing: 0mm;
-        font-weight: 700;
+        font-weight: 600;
     }
 }
