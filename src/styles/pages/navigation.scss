@@ -53,12 +53,12 @@
 
                 span{
                     &:first-child{
-                        color: var(--c-main-text);
+                        color: #494949;
                         padding: 3.2mm 0 2.1mm;
                     }
 
                     &:last-child{
-                        color: var(--c-brand);
+                        color: #737D75;
                     }
                 }
             }
