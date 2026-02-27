@@ -147,6 +147,7 @@
 
     &:first-child{
     background-color: var(--c-table);
+    border-radius: tomm(6);
   }
   }
 }
@@ -159,6 +160,7 @@
 
   &__item{
     &-top{
+      border-radius: tomm(6);
       display: grid;
       align-items: center;
       grid-template-columns: tomm(266) tomm(181) tomm(230);
@@ -194,7 +196,7 @@
       display: grid; 
       grid-template-columns: tomm(264) 1fr;
       padding: 0 tomm(16);
-      margin: tomm(44) 0 tomm(-10);
+      margin: tomm(14) 0 tomm(-10);
 
       p{
         margin: 0;
